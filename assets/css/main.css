@@ -2103,7 +2103,6 @@ button,
       #header .icons {
         height: 5em;
         line-height: 5em;
-        position: absolute;
         right: -0.5em;
         top: 0; } }
 
@@ -2272,20 +2271,41 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-    #language-switcher {
+ /* Estilo do seletor de idioma */
+#language-switcher {
   position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 0.9em;
+  display: flex;
+  flex-direction: row;
+  top: 1em;
+  right: 1em;
+  justify-content: flex-end;
+  align-items: left;
+  gap: 0.5em;
+  margin: 0.5em 0;
 }
 
+/* Ícones das bandeiras */
 #language-switcher .flag img {
   width: 24px;
   height: auto;
   vertical-align: middle;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease;  
 }
 
 #language-switcher .flag img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); 
+}
+
+/* Responsivo: empilhar ícones e idioma abaixo da logo */
+@media screen and (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+  }
+
+  .icons,
+  #language-switcher {
+    justify-content: center;
+  }
 }
