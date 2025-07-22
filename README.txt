@@ -1,122 +1,96 @@
-👋 Boas-vindas
-Olá, seja muito bem-vindo(a) ao meu portfólio de projetos de Análise de Dados!
+# 🧠 Portfólio de Análise de Dados | Kelvin Andrade
 
-Nesta página, compartilho soluções desenvolvidas com dados públicos, que demonstram minha capacidade de resolver problemas reais de negócio por meio da aplicação de técnicas analíticas, estatísticas e de visualização de dados.
+Bem-vindo(a) ao meu portfólio de projetos em Análise de Dados!
 
-Além dos projetos, você encontrará um panorama das minhas experiências profissionais, habilidades técnicas e o meu compromisso com a tomada de decisão orientada por dados.
+Este espaço foi criado para apresentar minhas habilidades na resolução de problemas de negócio utilizando dados. Os projetos aqui disponíveis foram desenvolvidos com bases públicas e têm como objetivo demonstrar minha capacidade de transformar dados em **insights estratégicos** por meio de ferramentas modernas e fundamentos sólidos de análise.
 
-Fique à vontade para explorar e entrar em contato pelos links ao final da página.
+---
 
-👨‍💻 Sobre mim
-Meu nome é Kelvin Andrade, sou formado em Análise e Desenvolvimento de Sistemas e atuei por mais de 7 anos em uma grande rede de atacado e varejo.
+## 👨‍💻 Sobre mim
 
-Atualmente, estou em transição de carreira para a área de Análise de Dados, buscando uma oportunidade para aplicar minha experiência em operações, gestão e indicadores de desempenho em ambientes orientados a dados.
+Sou **Kelvin Andrade**, formado em Análise e Desenvolvimento de Sistemas, com mais de 7 anos de experiência em ambientes de varejo e atacado. Atuei nas áreas de TI, operações e gestão administrativa, desenvolvendo projetos com foco em **eficiência operacional**, **controle de custos** e **análises de desempenho**.
 
-Meu objetivo é gerar valor para as empresas, estruturando soluções analíticas que aprimorem a eficiência operacional e a assertividade estratégica.
+Atualmente, estou em **transição para a área de Análise de Dados**, buscando oportunidades para aplicar minha vivência prática na construção de **soluções orientadas por dados** que melhorem a **tomada de decisão empresarial**.
 
-🧠 Habilidades Técnicas
-📊 Linguagens de Programação e Banco de Dados
-SQL (consultas, joins, CTEs, views, modelagem relacional)
+---
 
-Python (manipulação com Pandas, visualização com Matplotlib e Seaborn)
+## 🚀 Habilidades Técnicas
 
-Jupyter Notebook (documentação e apresentação de análises)
+### 📊 Linguagens e Banco de Dados
+- SQL para extração, transformação e análise de dados relacionais
+- Python com Pandas, Matplotlib, Seaborn, Plotly e Gradio
+- Jupyter Notebook para documentação de análises
+- Excel Avançado com Power Query, fórmulas, dashboards e VBA
 
-Excel Avançado com Power Query e VBA
+### 📈 Estatística e Machine Learning
+- Medidas de tendência e dispersão, normalidade e correlação
+- Testes estatísticos e análise de hipóteses
+- Modelos supervisionados: Regressão, Árvore de Decisão e KNN
+- Criação de pipelines de ML com Scikit-Learn
 
-Versionamento com Git e GitHub
+### 📊 Visualização de Dados
+- Dashboards com Power BI (ETL, DAX, segmentações, KPIs)
+- Storytelling com dados e painéis interativos
+- Análises de Cohort, RFM, Métricas AARRR e Pareto 80/20
 
-📈 Estatística e Machine Learning
-Medidas de tendência central e dispersão
+### ⚙️ Engenharia de Software
+- Boas práticas com Git e GitHub
+- Criação de APIs com Flask
+- Automatizações e integração com APIs externas
+- Deploy simples de modelos com Gradio
 
-Correlação, regressão, normalidade e outliers
+---
 
-Análise de hipóteses e testes estatísticos
+## 💼 Experiências Profissionais
 
-Algoritmos supervisionados (Árvore de Decisão, Regressão Linear e KNN)
+### 📌 Chefe Administrativo – Assaí Atacadista (2022–2025)
+- Redução de 30% nas despesas operacionais
+- Dashboards de desempenho por setor (Power BI + SQL)
+- Economia de 60% em transporte e 25% em energia
+- Apresentação de insights estratégicos e análises de DRE
 
-Pipeline de Machine Learning com Scikit-Learn
+### 📌 Chefe de Seção – Recebimento (2022)
+- Otimização da entrada de mercadorias e conferência fiscal
+- Eliminação de notas desintegradas com automação de validação
+- Melhoria de indicadores operacionais e gestão de equipe
 
-📊 Visualização de Dados
-Criação de dashboards com Power BI (KPI, gráficos temporais, segmentações)
+### 📌 Assistente de TI (2018–2022)
+- Gestão de 26 PDVs e suporte a +150 usuários
+- Geração de relatórios com MicroStrategy e Consinco
+- Redução de falhas com manutenção preventiva e padronizações
 
-Storytelling com dados e acompanhamento de metas
+---
 
-Análise de retenção (cohort), clusterização e Pareto 80/20
+## 📂 Projetos em Destaque
 
-Ferramentas de visualização: Power BI, Excel, Matplotlib, Seaborn, Plotly
+### 🔹 [Análise Airbnb – NYC](https://github.com/ksaworks/Airbnb)
+Dashboard com análise de acomodações, preços e bairros mais ativos, utilizando Power BI.
 
-⚙️ Engenharia de Software
-Organização de projetos com boas práticas de código
+### 🔹 [Cohort Analysis – SuperStore](https://github.com/ksaworks/analise-cohort-superstore)
+Análise de retenção de clientes com segmentação temporal via Excel.
 
-Automação de tarefas e ETL básico com Python
+### 🔹 [RFM – Segmentação de Clientes](https://github.com/ksaworks/rfm-segmentacao)
+Agrupamento comportamental com Excel e insights para campanhas personalizadas.
 
-Criação de APIs com Flask
+### 🔹 [DataLuz – Plataforma SaaS](https://github.com/ksaworks/dataluz-plataforma-saas)
+Simulação de uma solução digital para e-commerces com foco em métricas AARRR.
 
-Deploy de modelos com Gradio
+### 🔹 [Classificação de Fidelidade com IA](https://github.com/ksaworks/projeto-cartao-fidelidade)
+Modelo de machine learning com árvore de decisão e interface Gradio.
 
-Integrações simples com APIs externas
+### 🔹 [Simulação Jurídica com Dados Sintéticos](https://github.com/ksaworks/simulacao-dados-juridicos)
+Gerador de dataset jurídico para BI, análises preditivas e testes.
 
-🧩 Experiências Profissionais
-✅ Projetos em Análise de Dados
-Análise Cohort e RFM com Excel (segmentação e retenção de clientes)
+---
 
-Métricas de Negócio (Lifetime Value, CAC, Churn)
+## 📬 Contato
 
-Dashboard com dados públicos do Airbnb (Power BI)
+Se quiser trocar uma ideia, discutir um projeto ou conhecer mais sobre minha trajetória, estou à disposição:
 
-Classificação de clientes com Machine Learning (Árvore de Decisão)
+- [LinkedIn](https://www.linkedin.com/in/kelvinandradeworks/)
+- [GitHub](https://github.com/ksaworks)
+- 📧 kelvinstaandrade@gmail.com
 
-🧾 Chefe Administrativo | Assaí Atacadista – Itabaiana/SE
-Ago 2022 – Mai 2025
+---
 
-Redução de 30% nas despesas operacionais com otimizações logísticas
-
-Economia de 60% no transporte de colaboradores, mantendo a eficiência
-
-Redução de 25% no consumo de água e insumos com controle inteligente
-
-Dashboards no Power BI para controle de custos, estoque e vendas
-
-Integração de Excel com sistemas corporativos (Consinco, MicroStrategy)
-
-Apresentação de insights estratégicos para aumento de vendas e margem
-
-📦 Chefe de Seção – Recebimento | Assaí Atacadista
-Mar 2022 – Ago 2022
-
-Eliminação de 100% das notas desintegradas com validação automatizada
-
-Redução de 70% de produtos em sistema de troca
-
-Melhoria na agilidade e conformidade fiscal no setor de recebimento
-
-Gestão de equipe e fluxos de trabalho para maior produtividade
-
-💻 Assistente de TI | Assaí Atacadista
-Fev 2018 – Mar 2022
-
-Gerenciamento de 26 PDVs e suporte técnico interno
-
-Monitoramento de falhas no sistema Emporium e rede
-
-Redução de reincidência de chamados com processos padronizados
-
-Criação de relatórios técnicos e operacionais com MicroStrategy
-
-📂 Projetos de Análise de Dados
-Os projetos desenvolvidos utilizam ferramentas como:
-Power BI, Excel, Python, Pandas, SQL, Scikit-Learn, Flask, Gradio
-
-Confira a lista completa na seção de Projetos deste portfólio.
-
-📬 Contato
-Sinta-se à vontade para entrar em contato:
-
-🔗 LinkedIn
-
-📧 E-mail: kelvinstaandrade@gmail.com
-
-💻 GitHub
-
-Qualquer dúvida, sugestão ou oportunidade — será um prazer conversar com você!
+📌 _Portfólio pessoal desenvolvido com HTML5 + CSS3, baseado no template Editorial da HTML5 UP._
