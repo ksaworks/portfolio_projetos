@@ -1,101 +1,96 @@
-Boas vindas
+# 🧠 Portfólio de Análise de Dados | Kelvin Andrade
 
-Olá, seja muito bem-vindo(a) ao meu portfólio de projetos de Análise de Dados.
-Nessa página, eu demonstro minhas habilidades de resolver problemas de negócio utilizando conceitos e ferramentas de Análise de Dados, através de projetos com dados públicos.
+Bem-vindo(a) ao meu portfólio de projetos em Análise de Dados!
 
-Você vai encontrar também, minhas experiências profissionais, habilidades, ferramentas e conceitos envolvendo Análise de Dados.
+Este espaço foi criado para apresentar minhas habilidades na resolução de problemas de negócio utilizando dados. Os projetos aqui disponíveis foram desenvolvidos com bases públicas e têm como objetivo demonstrar minha capacidade de transformar dados em **insights estratégicos** por meio de ferramentas modernas e fundamentos sólidos de análise.
 
-Sinta-se à vontade para entrar em contato atravès dos links no final da página.
+---
 
+## 👨‍💻 Sobre mim
 
-Sobre mim
+Sou **Kelvin Andrade**, formado em Análise e Desenvolvimento de Sistemas, com mais de 7 anos de experiência em ambientes de varejo e atacado. Atuei nas áreas de TI, operações e gestão administrativa, desenvolvendo projetos com foco em **eficiência operacional**, **controle de custos** e **análises de desempenho**.
 
-Meu nome é Kelvin Andrade, sou formado em Análise e Desenvolvimento de Sistema e trabalhei
-em uma rede de atacado/varejo. 
+Atualmente, estou em **transição para a área de Análise de Dados**, buscando oportunidades para aplicar minha vivência prática na construção de **soluções orientadas por dados** que melhorem a **tomada de decisão empresarial**.
 
-Atualmente estou em trasição de carreira
+---
 
-Estou buscando uma oportunidade de trabalhar profissionalmente como Análista de Dados para 
-melhorar a tomada de decisão da empresa, atráves da construção de soluções usando dados.
+## 🚀 Habilidades Técnicas
 
-Habilidades
+### 📊 Linguagens e Banco de Dados
+- SQL para extração, transformação e análise de dados relacionais
+- Python com Pandas, Matplotlib, Seaborn, Plotly e Gradio
+- Jupyter Notebook para documentação de análises
+- Excel Avançado com Power Query, fórmulas, dashboards e VBA
 
+### 📈 Estatística e Machine Learning
+- Medidas de tendência e dispersão, normalidade e correlação
+- Testes estatísticos e análise de hipóteses
+- Modelos supervisionados: Regressão, Árvore de Decisão e KNN
+- Criação de pipelines de ML com Scikit-Learn
 
-Linguagens de Programação e Banco de dados
+### 📊 Visualização de Dados
+- Dashboards com Power BI (ETL, DAX, segmentações, KPIs)
+- Storytelling com dados e painéis interativos
+- Análises de Cohort, RFM, Métricas AARRR e Pareto 80/20
 
-Preencha conforme a ementa do curso de análise de dados da comunidade DS 
+### ⚙️ Engenharia de Software
+- Boas práticas com Git e GitHub
+- Criação de APIs com Flask
+- Automatizações e integração com APIs externas
+- Deploy simples de modelos com Gradio
 
-Estatística e Machine Learning
+---
 
-Preencha conforme a ementa do curso de análise de dados da comunidade DS 
+## 💼 Experiências Profissionais
 
-Visualização de dados
+### 📌 Chefe Administrativo – Assaí Atacadista (2022–2025)
+- Redução de 30% nas despesas operacionais
+- Dashboards de desempenho por setor (Power BI + SQL)
+- Economia de 60% em transporte e 25% em energia
+- Apresentação de insights estratégicos e análises de DRE
 
-Preencha conforme a ementa do curso de análise de dados da comunidade DS 
+### 📌 Chefe de Seção – Recebimento (2022)
+- Otimização da entrada de mercadorias e conferência fiscal
+- Eliminação de notas desintegradas com automação de validação
+- Melhoria de indicadores operacionais e gestão de equipe
 
-Engenharia de Software
+### 📌 Assistente de TI (2018–2022)
+- Gestão de 26 PDVs e suporte a +150 usuários
+- Geração de relatórios com MicroStrategy e Consinco
+- Redução de falhas com manutenção preventiva e padronizações
 
-Preencha conforme a ementa do curso de análise de dados da comunidade DS 
+---
 
+## 📂 Projetos em Destaque
 
-Experiências 
+### 🔹 [Análise Airbnb – NYC](https://github.com/ksaworks/Airbnb)
+Dashboard com análise de acomodações, preços e bairros mais ativos, utilizando Power BI.
 
-4 + Projetos de Análise de dados 
+### 🔹 [Cohort Analysis – SuperStore](https://github.com/ksaworks/analise-cohort-superstore)
+Análise de retenção de clientes com segmentação temporal via Excel.
 
-Analise de cohort, analise RFM usando excel
+### 🔹 [RFM – Segmentação de Clientes](https://github.com/ksaworks/rfm-segmentacao)
+Agrupamento comportamental com Excel e insights para campanhas personalizadas.
 
-Projeto metrica de negocios
+### 🔹 [DataLuz – Plataforma SaaS](https://github.com/ksaworks/dataluz-plataforma-saas)
+Simulação de uma solução digital para e-commerces com foco em métricas AARRR.
 
-Chefe Administrativo
-Assaí Atacadista – Itabaiana, SE
-Agosto 2022 a Maio 2025
-Análise de DRE (Demonstração do Resultado do Exercício) para identificar oportunidades de redução de custos e aumento da rentabilidade.
-Redução de 30% das despesas operacionais, através da otimização de processos e controle financeiro rigoroso.
-Otimização do transporte de colaboradores, reduzindo 60% dos custos contratuais, sem impacto na eficiência e bem-estar dos funcionários.
-Economia de 25% no consumo de água, com implementação de medidas de controle e conscientização.
-Redução de 8% no consumo de energia, adotando práticas sustentáveis e monitoramento de desperdícios.
-Redução de 25% no consumo de insumos, por meio da revisão de processos e melhor gerenciamento dos recursos.
-Criação de métricas de desempenho para os setores da loja, utilizando Power BI para visualização e monitoramento da eficiência operacional.
-Desenvolvimento de dashboards interativos no Power BI, permitindo análises detalhadas dos custos, vendas e desempenho dos setores.
-Desenvolvimento de planilhas avançadas no Excel, integradas com dados extraídos do MicroStrategy e Consinco, facilitando a geração de relatórios gerenciais.
-Apresentação de resultados e insights estratégicos para setores da empresa, utilizando Power BI para identificar oportunidades de aumento de vendas, redução de despesas e otimização de processos.
-Aprimoramento da gestão financeira e operacional, assegurando o cumprimento de metas e melhorando a tomada de decisões com base em dados.
+### 🔹 [Classificação de Fidelidade com IA](https://github.com/ksaworks/projeto-cartao-fidelidade)
+Modelo de machine learning com árvore de decisão e interface Gradio.
 
-Chefe de Seção
-Assaí Atacadista – Itabaiana, SE
-Março 2022 a Agosto 2022
-Chefe de Recebimento (período: 6 meses)
-Principais atividades e conquistas:
-Otimização do processo de recebimento de Nota Fiscal, garantindo maior agilidade e precisão nos registros.
-Redução de 70% das mercadorias em sistema de troca, por meio de análise detalhada e ações estratégicas para acelerar a resolução de pendências.
-Eliminação de 100% das notas desintegradas no sistema, implementando análise prévia do XML antes do lançamento e automatizando o processo.
-Supervisão da conferência e controle de documentos fiscais, assegurando conformidade com as normas tributárias e operacionais.
-Gestão da equipe de recebimento, otimizando fluxos de trabalho para melhorar a eficiência no setor.
-Interface com fornecedores e transportadoras, solucionando divergências e garantindo entregas no prazo.
-Monitoramento e controle de indicadores de desempenho do setor, assegurando melhoria contínua nos processos.
+### 🔹 [Simulação Jurídica com Dados Sintéticos](https://github.com/ksaworks/simulacao-dados-juridicos)
+Gerador de dataset jurídico para BI, análises preditivas e testes.
 
-Assistente de TI
-Assaí Atacadista – Itabaiana, SE
-Fevereiro 2018 a Março 2022
-Principais atividades:
-Gestão e manutenção de 26 PDVs, garantindo a continuidade operacional dos equipamentos e sistemas.
-Monitoramento e report de falhas no sistema Emporium para a matriz, assegurando rápida resolução de incidentes.
-Implementação de medidas preventivas para reduzir a recorrência de falhas em equipamentos de TI, especialmente danos causados por derramamento de líquidos nos PDVs.
-Geração e análise de relatórios de vendas e estoque utilizando os sistemas Consinco e MicroStrategy.
-Suporte técnico a usuários, diagnóstico e resolução de problemas de hardware e software.
-Auxílio na infraestrutura de redes e telecomunicações da loja, garantindo conectividade estável para operações.
-Documentação de incidentes e melhorias implementadas, criando um histórico para otimização de processos.
+---
 
-Projetos de Análise de Dados
+## 📬 Contato
 
-As ferramentas utilizadas foram:
+Se quiser trocar uma ideia, discutir um projeto ou conhecer mais sobre minha trajetória, estou à disposição:
 
+- [LinkedIn](https://www.linkedin.com/in/kelvinandradeworks/)
+- [GitHub](https://github.com/ksaworks)
+- 📧 kelvinstaandrade@gmail.com
 
-Contato  
+---
 
-Sinta-se à vontade para entrar em contato: 
-
-Linkedin: https://www.linkedin.com/in/kelvinandradeworks/
-E-mail: kelvinstaandrade@gmail.com
-GitHub: https://github.com/ksaworks
-Qualquer sugestão ou dúvida, por favor, entre em contato. 
+📌 _Portfólio pessoal desenvolvido com HTML5 + CSS3, baseado no template Editorial da HTML5 UP._
