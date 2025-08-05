@@ -1,0 +1,561 @@
+/* Futuristic Portfolio CSS */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-dark: #0a0a0a;
+  --secondary-dark: #1a1a2e;
+  --accent-blue: #00d4ff;
+  --accent-purple: #8a2be2;
+  --accent-green: #00ff88;
+  --text-light: #ffffff;
+  --text-gray: #b0b0b0;
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.3);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  background: var(--primary-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Animated Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
+  z-index: -1;
+  animation: backgroundShift 20s ease-in-out infinite;
+}
+
+@keyframes backgroundShift {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', monospace;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  text-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+}
+
+/* Header */
+#header {
+  background: rgba(26, 26, 46, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+#header .logo {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  text-decoration: none;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+#header .logo:hover {
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+  transform: scale(1.05);
+}
+
+/* Navigation Icons */
+.icons {
+  display: grid;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+
+.icons a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-glow);
+}
+
+.icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.6);
+}
+
+/* Language Switcher */
+#language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#language-switcher img {
+  width: 30px;
+  height: 20px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+#language-switcher img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* Banner Section */
+#banner {
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  min-height: 80vh;
+}
+
+#banner .content {
+  flex: 1;
+  animation: slideInLeft 1s ease-out;
+}
+
+#banner .image {
+  flex: 1;
+  text-align: center;
+  animation: slideInRight 1s ease-out;
+}
+
+#banner .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s ease;
+}
+
+#banner .image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Skills Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.features article {
+  background: rgba(26, 26, 46, 0.8);
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.features article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-accent);
+  opacity: 0.1;
+  transition: all 0.5s ease;
+}
+
+.features article:hover::before {
+  left: 0;
+}
+
+.features article:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--accent-blue);
+}
+
+.features .icon {
+  font-size: 3rem;
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Projects Section */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.posts article {
+  position: relative;
+  overflow: hidden;
+}
+
+.posts article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-primary);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0; /* Correção: garante que fique abaixo do conteúdo */
+}
+
+.posts article > *:not(.image) {
+  position: relative;
+  z-index: 1; /* Correção: garante que o texto fique acima */
+  padding: 1.5rem;
+  color: var(--text-light); /* Ajuste para contraste */
+}
+
+
+/*.posts article {
+  background: rgba(26, 26, 46, 0.9);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  position: relative;
+}
+
+.posts article::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}*/
+
+.posts article:hover::after {
+  opacity: 0.1;
+}
+
+.posts article:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+  border-color: var(--accent-blue);
+}
+
+.posts .image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.posts .image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.posts article:hover .image img {
+  transform: scale(1.1);
+}
+
+.posts article > div:not(.image) {
+  padding: 2rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: var(--gradient-accent);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.5s ease;
+}
+
+.button:hover::before {
+  left: 100%;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.4);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-gray);
+}
+
+ul li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--accent-blue);
+  font-size: 0.8rem;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.major {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.major h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.major h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+  
+  .posts {
+    grid-template-columns: 1fr;
+  }
+  
+  section {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-blue);
+}
+
+/* Loading Animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  animation: pulse 2s infinite;
+}
+
+
+
+/* === CUSTOMIZADO === */
+
+/* Centraliza o header com flexbox */
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo dos ícones sociais */
+#header .icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 12px;
+}
+
+/* Estilização das bandeiras de idioma */
+#language-switcher {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#language-switcher .flag img {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid #00ffe7;
+    transition: transform 0.3s ease;
+}
+#language-switcher .flag img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo dos cards de projetos */
+.projeto-card {
+    background-color: #111;
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 12px #00ffe7aa;
+    margin-bottom: 20px;
+}
+.projeto-card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #00ffe7;
+}
+.projeto-card p {
+    font-size: 0.9em;
+    margin: 6px 0;
+}
+.projeto-card .tech-stack {
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+
+.icon {
+  font-family: "Font Awesome 7 Free" !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+}
