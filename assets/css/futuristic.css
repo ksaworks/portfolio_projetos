@@ -26,7 +26,7 @@ body {
   font-family: 'Exo 2', sans-serif;
   background: var(--primary-dark);
   color: var(--text-light);
-  line-height: 1.6;
+ 
   overflow-x: hidden;
 }
 
@@ -263,14 +263,22 @@ p {
 
 /* Projects Section */
 .posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  padding: 2rem 0;
-}
-.posts article {
+  padding: 2rem 1rem;
+  width: 100%;
   position: relative;
-  overflow: hidden;
+  z-index: 1;
+}
+.posts article  {
+  display: block;
+  background: rgba(26, 26, 46, 0.9);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .posts article::after {
@@ -320,11 +328,11 @@ p {
   opacity: 0.1;
 }
 
-.posts article:hover {
+/*.posts article:hover {
   transform: translateY(-15px);
   box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
   border-color: var(--accent-blue);
-}
+}*/
 
 .posts .image {
   height: 200px;
@@ -407,9 +415,10 @@ ul li::before {
 
 /* Sections */
 section {
-  padding: 4rem 2rem;
-  max-width: 1200px;
+  width: 100%;
+  max-width: clamp(320px, 95%, 1200px);
   margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
 .major {
@@ -434,13 +443,27 @@ section {
   border-radius: 2px;
 }
 
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(26, 26, 46, 0.95);
+  border-top: 1px solid rgba(0, 212, 255, 0.3);
+  margin-top: 4rem;
+}
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px)  {
   #banner {
+    display: block;
     flex-direction: column;
     text-align: center;
     padding: 2rem 1rem;
   }
+  @media (max-width: 768px) {
+  section {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
   
   h1 {
     font-size: 2.5rem;
@@ -490,6 +513,7 @@ section {
 .loading {
   animation: pulse 2s infinite;
 }
+
 
 
 
@@ -558,4 +582,9 @@ section {
   font-family: "Font Awesome 7 Free" !important;
   font-weight: 900 !important;
   font-style: normal !important;
+}
+
+.contact-links a,
+.contact-links a:visited {
+  color: #00d4ff;
 }
