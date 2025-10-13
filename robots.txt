@@ -1,0 +1,20 @@
+# robots.txt para Portfolio de Kelvin Andrade
+# Permite que todos os motores de busca indexem o site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ksaworks.github.io/portfolio_projetos/sitemap.xml
+
+# Otimizações específicas
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Desallow arquivos desnecessários (se existirem)
+Disallow: /assets/sass/
+Disallow: /*.scss$
+

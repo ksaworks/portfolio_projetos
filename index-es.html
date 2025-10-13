@@ -1,11 +1,39 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="es">
   <head>
-    <title>Kelvin Andrade | Portafolio de Datos</title>
+    <title>Kelvin Andrade | Portafolio de Datos - Analista de Datos</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portafolio de Kelvin Andrade - Analista de Datos con experiencia en Power BI, Python, SQL y Machine Learning. Proyectos de análisis de datos, dashboards e insights estratégicos.">
+    <meta name="keywords" content="análisis de datos, power bi, python, sql, machine learning, analista de datos, portafolio, dashboards, data science">
+    <meta name="author" content="Kelvin Andrade">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ksaworks.github.io/portfolio_projetos/index-es.html">
+    <meta property="og:title" content="Kelvin Andrade | Portafolio de Datos">
+    <meta property="og:description" content="Portafolio de Kelvin Andrade - Analista de Datos especializado en transformar datos en insights estratégicos">
+    <meta property="og:image" content="https://ksaworks.github.io/portfolio_projetos/images/pic10.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ksaworks.github.io/portfolio_projetos/index-es.html">
+    <meta property="twitter:title" content="Kelvin Andrade | Portafolio de Datos">
+    <meta property="twitter:description" content="Portafolio de Kelvin Andrade - Analista de Datos">
+    <meta property="twitter:image" content="https://ksaworks.github.io/portfolio_projetos/images/pic10.png">
+    
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/index.html" />
+    <link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/index-en.html" />
+    <link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/index-es.html" />
+    <link rel="alternate" hreflang="x-default" href="https://ksaworks.github.io/portfolio_projetos/index.html" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/futuristic.css" />
+    
+    <!-- Detecção automática de idioma -->
+    <script src="assets/js/language-detection.js"></script>
     <script src="assets/js/futuristic.js"></script>
   </head>
   <body class="is-preload">
@@ -15,17 +43,23 @@
           <header id="header">
             <a href="index.html" class="logo">Portafolio de <strong>Análisis de Datos</strong></a>
             <ul class="icons">
-              <li><a href="https://www.linkedin.com/in/kelvinandradeworks/" class="fab fa-linkedin" target="_blank"></a></li>
-              <li><a href="mailto:kelvinstaandrade@gmail.com" class="fas fa-envelope" target="_blank"></a></li>
-              <li><a href="https://github.com/ksaworks" class="fab fa-github" target="_blank"></a></li>
-              <li><a href="https://wa.me/55079999268722" class="fab fa-whatsapp" target="_blank"></a></li>
+              <li><a href="https://www.linkedin.com/in/kelvinandradeworks/" class="fab fa-linkedin" target="_blank" aria-label="LinkedIn de Kelvin Andrade" rel="noopener noreferrer"></a></li>
+              <li><a href="mailto:kelvinstaandrade@gmail.com" class="fas fa-envelope" target="_blank" aria-label="Email kelvinstaandrade@gmail.com" rel="noopener noreferrer"></a></li>
+              <li><a href="https://github.com/ksaworks" class="fab fa-github" target="_blank" aria-label="GitHub de Kelvin Andrade" rel="noopener noreferrer"></a></li>
+              <li><a href="https://wa.me/55079999268722" class="fab fa-whatsapp" target="_blank" aria-label="WhatsApp de Kelvin Andrade" rel="noopener noreferrer"></a></li>
             </ul>
             <div id="language-switcher">
-              <a href="index.html" class="flag"><img src="images/br.png" alt="Portugués"></a>
+              <a href="index.html" class="flag" onclick="event.preventDefault(); changeLanguage('pt-br');" aria-label="Portugués">
+                <img src="images/br.png" alt="Portugués">
+              </a>
               <span class="separator">|</span>
-              <a href="index-en.html" class="flag"><img src="images/us.png" alt="Inglés"></a>
+              <a href="index-en.html" class="flag" onclick="event.preventDefault(); changeLanguage('en');" aria-label="Inglés">
+                <img src="images/us.png" alt="Inglés">
+              </a>
               <span class="separator">|</span>
-              <a href="index-es.html" class="flag"><img src="images/es.png" alt="Español"></a>
+              <a href="index-es.html" class="flag" onclick="event.preventDefault(); changeLanguage('es');" aria-label="Español">
+                <img src="images/es.png" alt="Español">
+              </a>
             </div>
           </header>
 
@@ -39,17 +73,49 @@
               <p>Siéntete libre de explorar y contactarme a través de los enlaces al final de la página.</p>
             </div>
             <span class="image object">
-              <img src="images/pic10.png" alt="" />
+              <img src="images/pic10.png" alt="Ilustración de análisis de datos con gráficos y dashboards" loading="lazy" />
             </span>
           </section>
 
-          <section>
+          <section id="sobre" class="sobre-section">
             <header class="main">
-              <h1>Sobre mí</h1>
+              <h1>Sobre Mí</h1>
             </header>
-            <h2 id="content">Mi nombre es Kelvin Andrade</h2>
-            <p>Soy graduado en Análisis y Desarrollo de Sistemas, con sólida experiencia en entornos de comercio mayorista y minorista.</p>
-            <p>Actualmente estoy en transición de carrera hacia el área de Análisis de Datos. Mi objetivo es generar valor en las empresas mediante soluciones basadas en datos, optimizando la toma de decisiones con inteligencia y precisión.</p>
+            <div class="sobre-content">
+              <p class="intro">
+                Mi nombre es <strong>Kelvin Santos Andrade</strong>
+              </p>
+              
+              <p class="resumo">
+                Analista de Datos con <strong>+7 años de experiencia</strong> en retail e industria, 
+                especializado en <strong>eficiencia operacional</strong> e <strong>inteligencia de negocios</strong>. 
+                Actualmente en Fiação Itabaiana, transformo datos en estrategias que generan 
+                <strong>crecimiento de ingresos</strong> y <strong>reducción de costos</strong>.
+              </p>
+              
+              <div class="destaque-principal">
+                <h3>Mi Actuación</h3>
+                <p>
+                  Desarrollo y automatizo <strong>dashboards e informes</strong> integrados al ERP Sankhya, 
+                  entregando KPIs accionables de Ventas, Inventario, Expedición y Finanzas. 
+                  Apoyo la cultura de <strong>Mejora Continua</strong> (PDCA/Kanban) con datos confiables en tiempo real.
+                </p>
+              </div>
+              
+              <div class="ferramentas-resumo">
+                <h3>Stack Tecnológico</h3>
+                <ul class="tech-list">
+                  <li><strong>BI & Visualización:</strong> Power BI (DAX/Power Query), Excel Avanzado</li>
+                  <li><strong>Datos & Análisis:</strong> SQL (Oracle, PostgreSQL, SQLite), Python (Pandas, Scikit-Learn)</li>
+                  <li><strong>Metodologías:</strong> PDCA, Kanban, Data Governance, Kaizen</li>
+                </ul>
+              </div>
+              
+              <p class="chamada-acao">
+                💡 <em>Mi objetivo es transformar complejidad en claridad, 
+                entregando insights que impulsan decisiones estratégicas.</em>
+              </p>
+            </div>
           </section>
 
           <section>
@@ -111,12 +177,27 @@
             </div>
           </section>
 
-          <section>
+          <section id="experiencias">
             <header class="main">
               <h1>Experiencia Profesional</h1>
+              <p class="subtitulo">Donde trabajé y el impacto que generé</p>
             </header>
-            <h2>6 Proyectos Completos de Análisis de Datos</h2>
-            <p>Desarrollé seis proyectos completos enfocados en la resolución de problemas empresariales, inspirados en desafíos reales. Utilizando bases de datos de competencia, conduje todo el proceso, desde la definición del problema hasta la entrega final, enfocado en generar insights estratégicos y soluciones aplicables.</p>
+            <h2>Analista de Datos - Fiação Itabaiana</h2>
+            <p><strong>Agosto 2024 - Actual · Ribeirópolis, Sergipe, Brasil</strong></p>
+            <p>
+              Creación, mantenimiento y automatización de reportes y dashboards integrados con ERP Sankhya, usando SQL, Power BI (DAX/Power Query) y Excel para entregar KPIs accionables de Ventas, Inventario, Expedición y Finanzas en un ambiente de Mejora Continua.
+            </p>
+            <h3>Responsabilidades Principales</h3>
+            <ul>
+              <li>Creación, mantenimiento y automatización de reportes y dashboards integrados con ERP Sankhya</li>
+              <li>Uso de SQL, Power BI (DAX/Power Query) y Excel avanzado para transformar datos en insights</li>
+              <li>Entrega de KPIs accionables para Ventas, Inventario, Expedición y Finanzas</li>
+              <li>Apoyo a las rutinas de Mejora Continua (PDCA)</li>
+              <li>Enfoque en calidad de datos, gobernanza y storytelling con datos</li>
+            </ul>
+            <h3>Competencias</h3>
+            <p><strong>MySQL, Microsoft Excel, Power BI, SQL, DAX, Power Query, ERP Sankhya, Análisis de Datos, KPIs, Mejora Continua</strong></p>
+            
             <h2>Más de 3 Años como Jefe Administrativo</h2>
             <h3>Actividades Realizadas</h3>
             <ul>
@@ -170,10 +251,11 @@
             </ul>
           </section>
           <!-- Section -->
-<section>
-	<header class="major">
-		<h1>Proyectos de Análisis de Datos</h1>
-	</header>
+          <section id="proyectos">
+            <header class="major">
+              <h1>Proyectos de Análisis de Datos</h1>
+              <p class="subtitulo">Proyectos demostrando habilidades técnicas y visión estratégica</p>
+            </header>
 	<div class="posts">
 
 		<article>

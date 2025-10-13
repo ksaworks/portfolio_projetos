@@ -1,11 +1,39 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
-    <title>Kelvin Andrade | Data Portfolio</title>
+    <title>Kelvin Andrade | Data Portfolio - Data Analyst</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Kelvin Andrade's Portfolio - Data Analyst with experience in Power BI, Python, SQL and Machine Learning. Data analysis projects, dashboards and strategic insights.">
+    <meta name="keywords" content="data analysis, power bi, python, sql, machine learning, data analyst, portfolio, dashboards, data science">
+    <meta name="author" content="Kelvin Andrade">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ksaworks.github.io/portfolio_projetos/index-en.html">
+    <meta property="og:title" content="Kelvin Andrade | Data Portfolio">
+    <meta property="og:description" content="Kelvin Andrade's Portfolio - Data Analyst specialized in transforming data into strategic insights">
+    <meta property="og:image" content="https://ksaworks.github.io/portfolio_projetos/images/pic10.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ksaworks.github.io/portfolio_projetos/index-en.html">
+    <meta property="twitter:title" content="Kelvin Andrade | Data Portfolio">
+    <meta property="twitter:description" content="Kelvin Andrade's Portfolio - Data Analyst">
+    <meta property="twitter:image" content="https://ksaworks.github.io/portfolio_projetos/images/pic10.png">
+    
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/index.html" />
+    <link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/index-en.html" />
+    <link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/index-es.html" />
+    <link rel="alternate" hreflang="x-default" href="https://ksaworks.github.io/portfolio_projetos/index.html" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/futuristic.css" />
+    
+    <!-- Detecção automática de idioma -->
+    <script src="assets/js/language-detection.js"></script>
     <script src="assets/js/futuristic.js"></script>
   </head>
   <body class="is-preload">
@@ -15,17 +43,23 @@
           <header id="header">
             <a href="index.html" class="logo">Data Analysis <strong>Portfolio</strong></a>
             <ul class="icons">
-              <li><a href="https://www.linkedin.com/in/kelvinandradeworks/" class="fab fa-linkedin" target="_blank"></a></li>
-              <li><a href="mailto:kelvinstaandrade@gmail.com" class="fas fa-envelope" target="_blank"></a></li>
-              <li><a href="https://github.com/ksaworks" class="fab fa-github" target="_blank"></a></li>
-              <li><a href="https://wa.me/55079999268722" class="fab fa-whatsapp" target="_blank"></a></li>
+              <li><a href="https://www.linkedin.com/in/kelvinandradeworks/" class="fab fa-linkedin" target="_blank" aria-label="Kelvin Andrade's LinkedIn" rel="noopener noreferrer"></a></li>
+              <li><a href="mailto:kelvinstaandrade@gmail.com" class="fas fa-envelope" target="_blank" aria-label="Email kelvinstaandrade@gmail.com" rel="noopener noreferrer"></a></li>
+              <li><a href="https://github.com/ksaworks" class="fab fa-github" target="_blank" aria-label="Kelvin Andrade's GitHub" rel="noopener noreferrer"></a></li>
+              <li><a href="https://wa.me/55079999268722" class="fab fa-whatsapp" target="_blank" aria-label="Kelvin Andrade's WhatsApp" rel="noopener noreferrer"></a></li>
             </ul>
             <div id="language-switcher">
-              <a href="index.html" class="flag"><img src="images/br.png" alt="Portuguese"></a>
+              <a href="index.html" class="flag" onclick="event.preventDefault(); changeLanguage('pt-br');" aria-label="Portuguese">
+                <img src="images/br.png" alt="Portuguese">
+              </a>
               <span class="separator">|</span>
-              <a href="index-en.html" class="flag"><img src="images/us.png" alt="English"></a>
+              <a href="index-en.html" class="flag" onclick="event.preventDefault(); changeLanguage('en');" aria-label="English">
+                <img src="images/us.png" alt="English">
+              </a>
               <span class="separator">|</span>
-              <a href="index-es.html" class="flag"><img src="images/es.png" alt="Spanish"></a>
+              <a href="index-es.html" class="flag" onclick="event.preventDefault(); changeLanguage('es');" aria-label="Spanish">
+                <img src="images/es.png" alt="Spanish">
+              </a>
             </div>
           </header>
 
@@ -39,17 +73,49 @@
               <p>Feel free to explore and reach out using the links at the bottom of the page.</p>
             </div>
             <span class="image object">
-              <img src="images/pic10.png" alt="" />
+              <img src="images/pic10.png" alt="Data analysis illustration with charts and dashboards" loading="lazy" />
             </span>
           </section>
 
-          <section>
+          <section id="about" class="sobre-section">
             <header class="main">
               <h1>About Me</h1>
             </header>
-            <h2 id="content">My name is Kelvin Andrade</h2>
-            <p>I hold a degree in Systems Analysis and Development, with solid experience in wholesale and retail environments.</p>
-            <p>I am currently transitioning into the Data Analysis field. My goal is to generate value for companies through data-driven solutions, enhancing decision-making with intelligence and precision.</p>
+            <div class="sobre-content">
+              <p class="intro">
+                My name is <strong>Kelvin Santos Andrade</strong>
+              </p>
+              
+              <p class="resumo">
+                Data Analyst with <strong>+7 years of experience</strong> in retail and manufacturing, 
+                specialized in <strong>operational efficiency</strong> and <strong>business intelligence</strong>. 
+                Currently at Fiação Itabaiana, I transform data into strategies that drive 
+                <strong>revenue growth</strong> and <strong>cost reduction</strong>.
+              </p>
+              
+              <div class="destaque-principal">
+                <h3>My Role</h3>
+                <p>
+                  I develop and automate <strong>dashboards and reports</strong> integrated with Sankhya ERP, 
+                  delivering actionable KPIs for Sales, Inventory, Shipping, and Finance. 
+                  I support a <strong>Continuous Improvement</strong> culture (PDCA/Kanban) with reliable, real-time data.
+                </p>
+              </div>
+              
+              <div class="ferramentas-resumo">
+                <h3>Tech Stack</h3>
+                <ul class="tech-list">
+                  <li><strong>BI & Visualization:</strong> Power BI (DAX/Power Query), Advanced Excel</li>
+                  <li><strong>Data & Analysis:</strong> SQL (Oracle, PostgreSQL, SQLite), Python (Pandas, Scikit-Learn)</li>
+                  <li><strong>Methodologies:</strong> PDCA, Kanban, Data Governance, Kaizen</li>
+                </ul>
+              </div>
+              
+              <p class="chamada-acao">
+                💡 <em>My goal is to transform complexity into clarity, 
+                delivering insights that drive strategic decisions.</em>
+              </p>
+            </div>
           </section>
 
           <section>
@@ -111,13 +177,27 @@
             </div>
           </section>
 
-          <section>
+          <section id="experiences">
             <header class="main">
               <h1>Professional Experience</h1>
+              <p class="subtitulo">Where I worked and the impact I generated</p>
             </header>
-            <h2>6 Full Data Analysis Projects</h2>
-            <p>I developed six complete projects focused on solving business problems, inspired by real corporate challenges. Using competition datasets, I led the entire process — from problem definition to final delivery — with a focus on generating strategic insights and applicable solutions.</p>
-
+            <h2>Data Analyst - Fiação Itabaiana</h2>
+            <p><strong>August 2024 - Present · Ribeirópolis, Sergipe, Brazil</strong></p>
+            <p>
+              Creation, maintenance and automation of reports and dashboards integrated with ERP Sankhya, using SQL, Power BI (DAX/Power Query) and Excel to deliver actionable KPIs for Sales, Inventory, Shipping and Finance in a Continuous Improvement environment.
+            </p>
+            <h3>Key Responsibilities</h3>
+            <ul>
+              <li>Creation, maintenance and automation of reports and dashboards integrated with ERP Sankhya</li>
+              <li>Use of SQL, Power BI (DAX/Power Query) and advanced Excel to transform data into insights</li>
+              <li>Delivery of actionable KPIs for Sales, Inventory, Shipping and Finance</li>
+              <li>Support for Continuous Improvement routines (PDCA)</li>
+              <li>Focus on data quality, governance and storytelling with data</li>
+            </ul>
+            <h3>Skills</h3>
+            <p><strong>MySQL, Microsoft Excel, Power BI, SQL, DAX, Power Query, ERP Sankhya, Data Analysis, KPIs, Continuous Improvement</strong></p>
+            
             <h2>3+ Years as Administrative Manager</h2>
             <h3>Main Activities</h3>
             <ul>
@@ -174,10 +254,11 @@
         
 
           <!-- Section -->
-<section>
-	<header class="major">
-		<h1>Data Analysis Projects</h1>
-	</header>
+          <section id="projects">
+            <header class="major">
+              <h1>Data Analysis Projects</h1>
+              <p class="subtitulo">Projects demonstrating technical skills and strategic vision</p>
+            </header>
 	<div class="posts">
 
 		<article>

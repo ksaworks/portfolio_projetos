@@ -1,14 +1,42 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="pt-BR">
 	<head>
-		<title>Kelvin Andrade | Portfólio de Dados</title>
+		<title>Kelvin Andrade | Portfólio de Dados - Analista de Dados</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-		<link rel="stylesheet" href="assets/css/futuristic.css" />
 		
-		<script src="assets/js/futuristic.js"></script>
+		<!-- SEO Meta Tags -->
+		<meta name="description" content="Portfolio de Kelvin Andrade - Analista de Dados com experiência em Power BI, Python, SQL e Machine Learning. Projetos de análise de dados, dashboards e insights estratégicos.">
+		<meta name="keywords" content="análise de dados, power bi, python, sql, machine learning, data analyst, portfolio, dashboards, data science">
+		<meta name="author" content="Kelvin Andrade">
+		
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ksaworks.github.io/portfolio_projetos/">
+	<meta property="og:title" content="Kelvin Andrade | Portfólio de Dados">
+	<meta property="og:description" content="Portfolio de Kelvin Andrade - Analista de Dados especializado em transformar dados em insights estratégicos">
+	<meta property="og:image" content="https://ksaworks.github.io/portfolio_projetos/images/pic10.png">
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://ksaworks.github.io/portfolio_projetos/">
+	<meta property="twitter:title" content="Kelvin Andrade | Portfólio de Dados">
+	<meta property="twitter:description" content="Portfolio de Kelvin Andrade - Analista de Dados">
+	<meta property="twitter:image" content="https://ksaworks.github.io/portfolio_projetos/images/pic10.png">
+	
+	<!-- hreflang -->
+	<link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/index.html" />
+	<link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/index-en.html" />
+	<link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/index-es.html" />
+	<link rel="alternate" hreflang="x-default" href="https://ksaworks.github.io/portfolio_projetos/index.html" />
+		
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+	<link rel="stylesheet" href="assets/css/futuristic.css" />
+	
+	<!-- Detecção automática de idioma -->
+	<script src="assets/js/language-detection.js"></script>
+	<script src="assets/js/futuristic.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -23,21 +51,26 @@
 						<!-- Header -->
 							<header id="header">
 								<a href="index.html" class="logo">Portfólio<strong></strong> de Análise de Dados</a>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/kelvinandradeworks/" class="fab fa-linkedin"target="_blank"><span class="label"></span></a></li>
-									<li><a href="mailto:kelvinstaandrade@gmail.com" class="fas fa-envelope"target="_blank"><span class="label"></span></a></li>
-									<li><a href="https://github.com/ksaworks" class="fab fa-github"target="_blank"><span class="label"></span></a></li>
-									<li><a href="https://wa.me/55079999268722" class="fab fa-whatsapp"target="_blank"><span class="label"></span></a></li>		
-								</ul>
-								<!-- Ícone de troca de idioma -->
-								<!-- HTML -->
-								<div id="language-switcher">
-									<a href="index.html" class="flag"><img src="images/br.png" alt="Português"></a>
-									<span class="separator">|</span>
-									<a href="index-en.html" class="flag"><img src="images/us.png" alt="English"></a>
-									<span class="separator">|</span>
-									<a href="index-es.html" class="flag"><img src="images/es.png" alt="Español"></a>
-								</div>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/kelvinandradeworks/" class="fab fa-linkedin" target="_blank" aria-label="LinkedIn de Kelvin Andrade"></a></li>
+										<li><a href="mailto:kelvinstaandrade@gmail.com" class="fas fa-envelope" target="_blank" aria-label="Email kelvinstaandrade@gmail.com"></a></li>
+										<li><a href="https://github.com/ksaworks" class="fab fa-github" target="_blank" aria-label="GitHub de Kelvin Andrade"></a></li>
+										<li><a href="https://wa.me/55079999268722" class="fab fa-whatsapp" target="_blank" aria-label="WhatsApp de Kelvin Andrade"></a></li>		
+									</ul>
+							<!-- Ícone de troca de idioma -->
+							<div id="language-switcher">
+								<a href="index.html" class="flag" onclick="event.preventDefault(); changeLanguage('pt-br');" aria-label="Português">
+									<img src="images/br.png" alt="Português">
+								</a>
+								<span class="separator">|</span>
+								<a href="index-en.html" class="flag" onclick="event.preventDefault(); changeLanguage('en');" aria-label="English">
+									<img src="images/us.png" alt="English">
+								</a>
+								<span class="separator">|</span>
+								<a href="index-es.html" class="flag" onclick="event.preventDefault(); changeLanguage('es');" aria-label="Español">
+									<img src="images/es.png" alt="Español">
+								</a>
+							</div>
 							</header>
 
 						<!-- Banner -->
@@ -45,28 +78,58 @@
 								<div class="content">
 									<header>
 										<h1>Olá, seja muito bem-vindo(a) ao meu portfólio de Análise de Dados</h1>
-										</h1>
 									</header>
 									<p>Nesta página, compartilho projetos desenvolvidos com dados públicos que demonstram minha capacidade de transformar dados em insights estratégicos, utilizando conceitos sólidos e ferramentas modernas.<br/>
 									Você encontrará também um panorama das minhas experiências profissionais, habilidades técnicas e competências analíticas que venho desenvolvendo ao longo da minha jornada.<br/>
 									 <p>Fique à vontade para explorar e entrar em contato pelos links ao final da página.</p>	
 								</div>
 								<span class="image object">
-									<img src="images/pic10.png" alt="" />
+									<img src="images/pic10.png" alt="Ilustração de análise de dados com gráficos e dashboards" loading="eager" />
 								</span>
 							</section>
 
 
 							<!-- Sobre mim -->
-								<section>
+								<section id="sobre" class="sobre-section">
 									<header class="main">
 										<h1>Sobre mim</h1>
 									</header>
 
-									<!-- Content -->
-										<h2 id="content">Meu nome é Kelvin Andrade</h2>
-										<p>Sou formado em Análise e Desenvolvimento de Sistemas, com sólida experiência em ambientes de atacado e varejo.</p>
-  										<p>Atualmente, estou em transição de carreira para a área de Análise de Dados. Meu objetivo é contribuir com a geração de valor nas empresas por meio da construção de soluções baseadas em dados, otimizando a tomada de decisão com inteligência e precisão.</p>
+									<div class="sobre-content">
+										<p class="intro">
+											Meu nome é <strong>Kelvin Santos Andrade</strong>
+										</p>
+										
+										<p class="resumo">
+											Analista de Dados com <strong>+7 anos de experiência</strong> no varejo e indústria, 
+											especializado em <strong>eficiência operacional</strong> e <strong>inteligência de negócios</strong>. 
+											Atualmente na Fiação Itabaiana, transformo dados em estratégias que geram 
+											<strong>crescimento de receita</strong> e <strong>redução de custos</strong>.
+										</p>
+										
+										<div class="destaque-principal">
+											<h3>Minha Atuação</h3>
+											<p>
+												Desenvolvo e automatizo <strong>dashboards e relatórios</strong> integrados ao ERP Sankhya, 
+												entregando KPIs acionáveis de Vendas, Estoque, Expedição e Financeiro. 
+												Apoio a cultura de <strong>Melhoria Contínua</strong> (PDCA/Kanban) com dados confiáveis e em tempo real.
+											</p>
+										</div>
+										
+										<div class="ferramentas-resumo">
+											<h3>Stack Tecnológico</h3>
+											<ul class="tech-list">
+												<li><strong>BI & Visualização:</strong> Power BI (DAX/Power Query), Excel Avançado</li>
+												<li><strong>Dados & Análise:</strong> SQL (Oracle, PostgreSQL, SQLite), Python (Pandas, Scikit-Learn)</li>
+												<li><strong>Metodologias:</strong> PDCA, Kanban, Data Governance, Kaizen</li>
+											</ul>
+										</div>
+										
+										<p class="chamada-acao">
+											💡 <em>Meu objetivo é transformar complexidade em clareza, 
+											entregando insights que impulsionam decisões estratégicas.</em>
+										</p>
+									</div>
 								</section>
 
 						<!-- Section -->
@@ -81,9 +144,9 @@
 											<h3>Linguagens de Programação e Banco de Dados</h3>
 											<ul>
     											<li>SQL para extração, transformação e análise de dados relacionais</li>
-												<li>lógica de programação, manipulação de dados com Pandas, visualização interativa com Streamlit, conceitos de ETL e integração com cloud.</li>
+												<li>Python: lógica de programação, manipulação de dados com Pandas, visualização interativa com Streamlit, conceitos de ETL e integração com cloud</li>
 												<li>Excel Avançado com Power Query e Tabelas Dinâmicas</li>
-											<ul>
+											</ul>
 										</div>
 									</article>
 									<article>
@@ -129,14 +192,27 @@
 								</div>
 							</section>
 						<!-- Experiência -->
-								<section>
+								<section id="experiencias">
 									<header class="main">
 										<h1>Experiências Profissionais</h1>
+										<p class="subtitulo">Onde trabalhei e o impacto que gerei</p>
 									</header>			
-										<h2 id="content">6 Projetos completos de Análise de Dados</h2>
+										<h2 id="content">Analista de Dados - Fiação Itabaiana</h2>
+										<p><strong>Agosto 2024 - Atual · Ribeirópolis, Sergipe, Brasil</strong></p>
 										<p>
-											Desenvolvi seis projetos completos de Análise de Dados voltados para resolução de problemas de negócios, inspirados em desafios reais enfrentados por empresas. Utilizando bases fictícias de competições, conduzi todo o processo — desde a definição do problema até a entrega final, com foco em gerar insights estratégicos e soluções aplicáveis ao mundo corporativo.
-										</p>			
+											Criação, manutenção e automação de relatórios e dashboards integrados ao ERP Sankhya, usando SQL, Power BI (DAX/Power Query) e Excel para entregar KPIs acionáveis de Vendas, Estoque, Expedição e Financeiro em um ambiente de Melhoria Contínua.
+										</p>
+										<h3>Principais Responsabilidades</h3>
+										<ul>
+											<li>Criação, manutenção e automação de relatórios e dashboards integrados ao ERP Sankhya</li>
+											<li>Uso de SQL, Power BI (DAX/Power Query) e Excel avançado para transformar dados em insights</li>
+											<li>Entrega de KPIs acionáveis para Vendas, Estoque, Expedição e Financeiro</li>
+											<li>Apoio às rotinas de Melhoria Contínua (PDCA)</li>
+											<li>Foco em data quality, governança e storytelling com dados</li>
+										</ul>
+										<h3>Competências</h3>
+										<p><strong>MySQL, Microsoft Excel, Power BI, SQL, DAX, Power Query, ERP Sankhya, Análise de Dados, KPIs, Melhoria Contínua</strong></p>
+										
 										<h2 id="content">3+ anos Chefe Administrativo</h2>
 										<h3>Atividades Realizadas</h3>
 										<ul>
@@ -194,14 +270,15 @@
 								</section>	
 
 						<!-- Section -->
-							<section>
+							<section id="projetos">
 								<header class="major">
-									<h1>Projetos Análise de Dados</h1>
+									<h1>Projetos de Análise de Dados</h1>
+									<p class="subtitulo">Projetos demonstrando habilidades técnicas e visão estratégica</p>
 								</header>
 								<div class="posts">
 
 									<article>
-									<a href="https://github.com/ksaworks/analise-cohort-superstore" class="image" target="_blank"><img src="images/heatmap-cohort.png"  alt="" /></a><div class="content">
+									<a href="https://github.com/ksaworks/analise-cohort-superstore" class="image" target="_blank"><img src="images/heatmap-cohort.png"  alt="Heatmap de análise de cohort mostrando retenção de clientes ao longo do tempo" loading="lazy" /></a><div class="content">
 										<h3>Análise de Cohort – SuperStore</h3>
 										<p>Utilizando Excel, desenvolvi uma análise de retenção de clientes (Cohort Analysis) com dados reais de uma rede nacional de supermercados. A partir da limpeza e estruturação dos dados, identifiquei os melhores grupos de aquisição e padrões de comportamento, gerando insights estratégicos para retenção e vendas.</p>
 										<ul>
@@ -210,12 +287,12 @@
 										<li><strong>Insight-chave:</strong>  Campanhas promocionais impactam positivamente a recompra</li>
 										</ul>
 										<ul class="actions">
-										<li><a href="https://github.com/ksaworks/analise-cohort-superstore" class="button" target="_blank">Ver Projeto</a></li>
+										<li><a href="https://github.com/ksaworks/analise-cohort-superstore" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto Completo</a></li>
 										</ul>
 									</div>
 									</article>
 									<article>
-										<a href="https://github.com/ksaworks/rfm-segmentacao" class="image" target="_blank"><img src="images/rfm-treemap.png" alt="" /></a>
+										<a href="https://github.com/ksaworks/rfm-segmentacao" class="image" target="_blank"><img src="images/rfm-treemap.png" alt="Treemap da análise RFM segmentando clientes por recência, frequência e valor monetário" loading="lazy" /></a>
 										<h3>Análise RFM – Segmentação de Clientes</h3>
 										<p> Classifiquei clientes com base em seu comportamento de compra utilizando a técnica de <strong>RFM (Recência, Frequência e Monetização)</strong>. A análise permite segmentar a base de clientes para criar campanhas personalizadas e maximizar o retorno em marketing.</p>
 										<ul>
@@ -224,11 +301,11 @@
 											<li><strong>Resultados:</strong> 40% dos clientes são potenciais fiéis; apenas 1% “Não Perder”</li>
 										</ul>
 										<ul class="actions">
-											<li><a href="https://github.com/ksaworks/rfm-segmentacao" class="button"target="_blank">Ver Projeto</a></li>
+											<li><a href="https://github.com/ksaworks/rfm-segmentacao" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto Completo</a></li>
 										</ul>
 									</article>
 									<article>
-										<a href="https://github.com/ksaworks/dataluz-plataforma-saas" class="image"target="_blank"><img src="images/dataluz.png" alt="" /></a>
+										<a href="https://github.com/ksaworks/dataluz-plataforma-saas" class="image" target="_blank"><img src="images/dataluz.png" alt="Interface da plataforma DataLuz SaaS para e-commerce" loading="lazy" /></a>
 										<h3>DataLuz – Plataforma SaaS para E-commerces</h3>
 										<p> Desenvolvi uma solução digital fictícia para pequenos e médios e-commerces que enfrentam dificuldades com análise de dados. A <strong>DataLuz</strong> oferece dashboards intuitivos, alertas automáticos via WhatsApp e relatórios personalizados. O projeto faz parte do curso da Comunidade DS e engloba a criação completa de um modelo de negócio digital com estratégias AARRR.</p>
 										<ul>
@@ -238,11 +315,11 @@
 											<li><strong>Destaque:</strong> Envio de insights direto no WhatsApp do empreendedor</li>
 										</ul>
 										<ul class="actions">
-											<li><a href="https://github.com/ksaworks/dataluz-plataforma-saas" class="button"target="_blank">Ver Projeto</a></li>
+											<li><a href="https://github.com/ksaworks/dataluz-plataforma-saas" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto Completo</a></li>
 										</ul>
 									</article>
 									<article>
-									<a href="https://github.com/ksaworks/projeto-cartao-fidelidade" class="image"target="_blank"><img src="images/arvore_decisao.png" alt="" /></a>
+									<a href="https://github.com/ksaworks/projeto-cartao-fidelidade" class="image" target="_blank"><img src="images/arvore_decisao.png" alt="Visualização de árvore de decisão para previsão de fidelidade de clientes" loading="lazy" /></a>
 									<h3>Previsão de Fidelidade com IA – Classificação de Clientes</h3>
 									<p>
 										Neste projeto, desenvolvi um modelo de <strong>Machine Learning</strong> usando <strong>Árvore de Decisão</strong> para prever a propensão de clientes aderirem a cartões de fidelidade (Aurora, Nova e Star).
@@ -255,11 +332,11 @@
 										<li><strong>Destaque:</strong> Projeto com deploy interativo e visualização da árvore em tempo real</li>
 									</ul>
 									<ul class="actions">
-										<li><a href="https://github.com/ksaworks/projeto-cartao-fidelidade" class="button" target="_blank">Ver Projeto</a></li>
+										<li><a href="https://github.com/ksaworks/projeto-cartao-fidelidade" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto Completo</a></li>
 									</ul>
 									</article>
 									<article>
-									<a href="https://github.com/ksaworks/simulacao-dados-juridicos" class="image"target="_blank"><img src="images/legal_data_banner.png" alt="" /></a>
+									<a href="https://github.com/ksaworks/simulacao-dados-juridicos" class="image" target="_blank"><img src="images/legal_data_banner.png" alt="Banner do projeto de simulação de dados jurídicos sintéticos" loading="lazy" /></a>
 									<h3>Simulação Jurídica com Dados Sintéticos para Data Science</h3>
 									<p>
 										 Neste projeto, desenvolvi um gerador de dados jurídicos sintéticos e realistas, criando um dataset completo com 2.000 processos, partes envolvidas e movimentações. A solução é ideal para demonstrar habilidades em análise, BI e modelagem preditiva em um cenário que simula o mundo real do Direito.
@@ -271,11 +348,11 @@
 										<li><strong>Destaque:</strong> Capacidade de simular um ambiente complexo, incluindo valores de causa, provisão de risco, fases processuais e advogados responsáveis.</li>
 									</ul>
 									<ul class="actions">
-										<li><a href="https://github.com/ksaworks/simulacao-dados-juridicos" class="button" target="_blank">Ver Projeto</a></li>
+										<li><a href="https://github.com/ksaworks/simulacao-dados-juridicos" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto Completo</a></li>
 									</ul>
 									</article>
 									<article>
-										<a href="https://github.com/ksaworks/Airbnb" class="image"target="_blank"><img src="images/airbnb_dashboard.png" alt="" /></a>
+										<a href="https://github.com/ksaworks/Airbnb" class="image" target="_blank"><img src="images/airbnb_dashboard.png" alt="Dashboard Power BI de análise de acomodações Airbnb em Nova York" loading="lazy" /></a>
 										<h3>Análise de Acomodações e Preços – Airbnb NYC</h3>
 										<p>Projeto completo de Análise de Dados utilizando um grande dataset do Airbnb de Nova York. A proposta foi transformar milhares de registros em insights estratégicos sobre acomodações, preços e padrões de localização, por meio de um dashboard dinâmico e visualmente intuitivo no Power BI.</p>
 										<ul>
@@ -284,7 +361,7 @@
 											<li><strong>Insight-chave:</strong> Identificação dos bairros com maior concentração de acomodações premium e padrões de preços por estação do ano</li>
 										</ul>
 										<ul class="actions">
-											<li><a href="https://github.com/ksaworks/Airbnb" class="button" target="_blank">Ver Projeto</a></li>
+											<li><a href="https://github.com/ksaworks/Airbnb" class="button" target="_blank" rel="noopener noreferrer">Ver Projeto Completo</a></li>
 										</ul>
 										</article>
 								</div>
