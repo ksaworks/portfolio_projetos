@@ -95,13 +95,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Detectar idioma atual para texto de carregamento
+    function getCurrentLanguageForLoading() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        if (currentPage === 'index-en.html') return 'en';
+        if (currentPage === 'index-es.html') return 'es';
+        return 'pt-br'; // Default para português
+    }
+
+    // Textos de carregamento multilíngues
+    const LOADING_TEXTS = {
+        'pt-br': 'Carregando Portfólio...',
+        'en': 'Loading Portfolio...',
+        'es': 'Cargando Portafolio...'
+    };
+
+    const currentLang = getCurrentLanguageForLoading();
+    const loadingText = LOADING_TEXTS[currentLang] || LOADING_TEXTS['pt-br'];
+
     // Loading screen
     const loadingScreen = document.createElement('div');
     loadingScreen.id = 'loading-screen';
     loadingScreen.innerHTML = `
         <div class="loading-content">
             <div class="loading-spinner"></div>
-            <p>Carregando Portfólio...</p>
+            <p>${loadingText}</p>
         </div>
     `;
     loadingScreen.style.cssText = `
