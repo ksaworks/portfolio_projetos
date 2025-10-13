@@ -1,6 +1,24 @@
 /* Futuristic Portfolio CSS */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;500;600;700&display=swap');
 
+/* Garantir que todas as seções sejam visíveis */
+section[id] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Específico para seção de projetos */
+section[id="projetos"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: 300px !important;
+  overflow: visible !important;
+  position: relative !important;
+  z-index: 10 !important;
+}
+
 :root {
   --primary-dark: #0a0a0a;
   --secondary-dark: #1a1a2e;
@@ -159,37 +177,46 @@ p {
   box-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
-/* Banner Section */
+/* Banner Section - Hero Principal (Sem Imagem) */
 #banner {
-  padding: 4rem 2rem;
+  padding: 60px 40px 80px; /* Espaçamento otimizado para texto centralizado */
   display: flex;
+  justify-content: center; /* Centraliza o conteúdo */
   align-items: center;
-  gap: 3rem;
-  min-height: 80vh;
+  min-height: auto; /* Remove altura mínima excessiva */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #banner .content {
   flex: 1;
-  animation: slideInLeft 1s ease-out;
+  text-align: center; /* Centraliza o texto */
+  animation: slideInUp 1s ease-out;
 }
 
-#banner .image {
-  flex: 1;
-  text-align: center;
-  animation: slideInRight 1s ease-out;
+#banner .content h1 {
+  font-size: 2.5rem;
+  color: #00d9ff;
+  margin-bottom: 30px;
+  line-height: 1.3;
+  font-weight: 600;
 }
 
-#banner .image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: var(--shadow-card);
-  transition: all 0.3s ease;
+#banner .content p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#banner .image img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+#banner .content p:last-child {
+  margin-bottom: 0;
+  font-style: italic;
+  color: #00d9ff;
+  font-size: 1.1rem;
 }
 
 @keyframes slideInLeft {
@@ -263,22 +290,26 @@ p {
 
 /* Projects Section */
 .posts {
- display: grid;
+  display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   padding: 2rem 1rem;
   width: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: 200px; /* Altura mínima para garantir visibilidade */
 }
-.posts article  {
+.posts article {
   display: block;
   background: rgba(26, 26, 46, 0.9);
   border-radius: 15px;
   padding: 1.5rem;
   border: 1px solid rgba(0, 212, 255, 0.2);
   transition: all 0.3s ease;
-  z-index: 2;
+  z-index: 11; /* Aumentado para garantir visibilidade */
+  position: relative;
 }
 
 .posts article::after {
@@ -450,23 +481,61 @@ footer {
   border-top: 1px solid rgba(0, 212, 255, 0.3);
   margin-top: 4rem;
 }
-/* Responsive Design */
-@media screen and (max-width: 768px)  {
+/* Desktop - Telas grandes */
+@media screen and (min-width: 1200px) {
   #banner {
-    display: block;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem 1rem;
+    padding: 70px 40px 90px;
   }
-  @media (max-width: 768px) {
-  section {
-    width: 100%;
-    padding: 2rem 1rem;
+  
+  #banner .content h1 {
+    font-size: 2.8rem;
+  }
+  
+  #banner .content p {
+    font-size: 1.3rem;
   }
 }
+
+/* Desktop - Telas muito grandes */
+@media screen and (min-width: 1600px) {
+  #banner {
+    padding: 80px 40px 100px;
+  }
+  
+  #banner .content h1 {
+    font-size: 3rem;
+  }
+  
+  #banner .content p {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #banner {
+    padding: 40px 20px 60px;
+    text-align: center;
+  }
+  
+  #banner .content h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  #banner .content p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+  
+  #banner .content p:last-child {
+    font-size: 1rem;
+  }
   
   h1 {
     font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
   }
   
   .features {
@@ -475,14 +544,104 @@ footer {
   
   .posts {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+    display: grid !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Garantir que a seção de projetos seja visível */
+  section[id="projetos"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 300px !important;
+  }
+  
+  .posts article {
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  .posts .image {
+    height: 180px; /* Altura reduzida para mobile */
   }
   
   section {
+    width: 100%;
     padding: 2rem 1rem;
   }
 }
 
-/* Scrollbar Styling */
+/* iPhone e dispositivos móveis pequenos */
+@media screen and (max-width: 480px) {
+  #banner {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  #banner .image img {
+    max-width: 250px; /* Ainda menor para telas pequenas */
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    opacity: 1 !important; /* Garantir opacidade normal no iPhone */
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  .posts {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  
+  .posts article {
+    padding: 0.8rem;
+  }
+  
+  .posts .image {
+    height: 160px; /* Altura ainda menor para telas pequenas */
+  }
+  
+  section {
+    padding: 1.5rem 0.8rem;
+  }
+  
+  /* Garantir que todas as seções sejam visíveis */
+  section[id] {
+    min-height: auto;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Específico para seção de projetos */
+  section[id="projetos"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 300px !important;
+    overflow: visible !important;
+  }
+  
+  .posts {
+    display: grid !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 200px !important;
+  }
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -858,4 +1017,43 @@ footer {
 .contact-links a,
 .contact-links a:visited {
   color: #00d4ff;
+}
+
+/* Correções específicas para Safari iOS */
+@supports (-webkit-touch-callout: none) {
+  #banner .image img {
+    -webkit-transform: translateZ(0); /* Força aceleração de hardware */
+    transform: translateZ(0);
+    opacity: 1 !important; /* Garantir opacidade normal no Safari iOS */
+  }
+  
+  .posts {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  .posts article {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  /* Garantir que as seções sejam visíveis no Safari */
+  section[id="projetos"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important;
+    min-height: 300px !important;
+    overflow: visible !important;
+  }
+  
+  .posts {
+    display: grid !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    min-height: 200px !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
 }
