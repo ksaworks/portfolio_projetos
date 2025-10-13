@@ -1,0 +1,26 @@
+# Arquivos do sistema que não devem ser versionados
+.vscode/
+AppData/
+.zenmap/
+*.log
+*.tmp
+
+# Arquivos específicos do Windows
+Thumbs.db
+Desktop.ini
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos temporários
+*.temp
+*.swp
+*.swo
+
+# Node modules (se houver)
+node_modules/
+
+# Arquivos de configuração local
+.env
+.env.local
