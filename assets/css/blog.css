@@ -128,7 +128,7 @@ article h3 a:hover {
 }
 
 #menu ul li::before {
-	content: '▶';
+	content: '';
 	position: absolute;
 	left: 0;
 	top: 50%;
