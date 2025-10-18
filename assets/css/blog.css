@@ -1,0 +1,586 @@
+/* ============================================
+   BLOG STYLES - Estilos Simples e Funcionais
+   ============================================ */
+
+/* Global Overrides para tema futurista */
+body {
+	background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 100%);
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* Cards/Articles */
+article {
+	background: rgba(26, 26, 46, 0.8);
+	border: 2px solid rgba(94, 240, 255, 0.3);
+	border-radius: 12px;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	transition: all 0.3s ease;
+	writing-mode: horizontal-tb !important;
+	text-orientation: mixed !important;
+}
+
+/* Garantir que todo texto dentro dos cards seja horizontal */
+.posts article *,
+.posts article h3,
+.posts article h3 a,
+.posts article p,
+.posts article span {
+	writing-mode: horizontal-tb !important;
+	text-orientation: mixed !important;
+	transform: none !important;
+	direction: ltr !important;
+	unicode-bidi: normal !important;
+}
+
+article:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(94, 240, 255, 0.3);
+	border-color: #5ef0ff;
+}
+
+article h3 {
+	color: #5ef0ff;
+	margin-bottom: 1rem;
+	writing-mode: horizontal-tb !important;
+	text-orientation: mixed !important;
+	transform: none !important;
+	white-space: normal !important;
+	word-wrap: break-word !important;
+	line-height: 1.4 !important;
+	direction: ltr !important;
+	unicode-bidi: normal !important;
+	display: block !important;
+	width: 100% !important;
+}
+
+article h3 a {
+	color: #5ef0ff;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	writing-mode: horizontal-tb !important;
+	text-orientation: mixed !important;
+	transform: none !important;
+	white-space: normal !important;
+	word-wrap: break-word !important;
+	display: block !important;
+	width: 100% !important;
+	direction: ltr !important;
+	unicode-bidi: normal !important;
+}
+
+article h3 a:hover {
+	text-shadow: 0 0 20px rgba(94, 240, 255, 0.8);
+}
+
+/* Post Meta Info */
+.post-meta {
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.post-meta span {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* Tags */
+.post-tags {
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+.post-tags .tag {
+	display: inline-block;
+	padding: 0.3rem 0.8rem;
+	background: rgba(94, 240, 255, 0.1);
+	border: 1px solid rgba(94, 240, 255, 0.3);
+	border-radius: 20px;
+	font-size: 0.85rem;
+	color: #5ef0ff;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.post-tags .tag:hover {
+	background: rgba(94, 240, 255, 0.2);
+	border-color: #5ef0ff;
+	transform: scale(1.05);
+}
+
+/* Sidebar */
+#sidebar {
+	background: rgba(26, 26, 46, 0.95);
+	border-left: 2px solid rgba(94, 240, 255, 0.3);
+}
+
+/* Correção do alinhamento do menu */
+#menu ul li {
+	position: relative;
+	padding-left: 1.5rem !important;
+}
+
+#menu ul li::before {
+	content: '▶';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #5ef0ff;
+	font-size: 0.8rem;
+	line-height: 1;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+	background: rgba(26, 26, 46, 0.8);
+	padding: 1rem 2rem;
+	margin: 0;
+	border-bottom: 1px solid rgba(94, 240, 255, 0.2);
+	font-size: 0.9rem;
+}
+
+.breadcrumbs ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.breadcrumbs li {
+	display: flex;
+	align-items: center;
+	margin-right: 0.5rem;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+	content: '›';
+	margin-left: 0.5rem;
+	color: #5ef0ff;
+	font-weight: bold;
+}
+
+.breadcrumbs a {
+	color: rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+	color: #5ef0ff;
+}
+
+.breadcrumbs .current {
+	color: #5ef0ff;
+	font-weight: 500;
+}
+
+/* Responsive breadcrumbs */
+@media screen and (max-width: 768px) {
+	.breadcrumbs {
+		padding: 0.8rem 1rem;
+		font-size: 0.8rem;
+	}
+	
+	.breadcrumbs li {
+		margin-right: 0.3rem;
+	}
+	
+	.breadcrumbs li:not(:last-child)::after {
+		margin-left: 0.3rem;
+	}
+}
+
+#menu ul li a {
+	display: block;
+	padding: 0.625em 0;
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+#menu ul li a:hover,
+#menu ul li a.active {
+	color: #5ef0ff;
+}
+
+#menu ul li a.active {
+	font-weight: bold;
+}
+
+#sidebar h2 {
+	color: #5ef0ff;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#sidebar h3 {
+	color: #5ef0ff;
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+
+#sidebar a {
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+#sidebar a:hover {
+	color: #5ef0ff;
+	text-shadow: 0 0 10px rgba(94, 240, 255, 0.5);
+}
+
+#sidebar a.active {
+	color: #5ef0ff;
+	font-weight: bold;
+}
+
+/* Categorias Grid */
+#sidebar .row {
+	margin-top: 1rem;
+}
+
+/* Contact List */
+#sidebar .contact {
+	list-style: none;
+	padding: 0;
+}
+
+#sidebar .contact li {
+	margin-bottom: 0.8rem;
+}
+
+#sidebar .contact li a {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+#sidebar .contact li a:hover {
+	color: #5ef0ff;
+}
+
+/* Footer na sidebar */
+#sidebar #footer {
+	margin-top: 3rem;
+	padding-top: 2rem;
+	border-top: 2px solid rgba(94, 240, 255, 0.2);
+}
+
+#sidebar #footer .copyright {
+	font-size: 0.85rem;
+	color: rgba(255, 255, 255, 0.6);
+	margin: 0;
+	text-align: center;
+}
+
+/* Banner/Header */
+#banner h1 {
+	color: #5ef0ff;
+	text-shadow: 0 0 30px rgba(94, 240, 255, 0.5);
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+/* Buttons - Design Futurista Melhorado */
+.button {
+	background: linear-gradient(135deg, rgba(94, 240, 255, 0.15) 0%, rgba(138, 43, 226, 0.15) 100%);
+	border: 2px solid #5ef0ff;
+	color: #5ef0ff;
+	padding: 0.8rem 2rem;
+	border-radius: 12px;
+	text-decoration: none;
+	display: inline-block;
+	transition: all 0.3s ease;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(94, 240, 255, 0.2);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+.button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(94, 240, 255, 0.3), transparent);
+	transition: all 0.5s ease;
+}
+
+.button:hover::before {
+	left: 100%;
+}
+
+.button:hover {
+	background: linear-gradient(135deg, rgba(94, 240, 255, 0.25) 0%, rgba(138, 43, 226, 0.25) 100%);
+	border-color: #7ff3ff;
+	box-shadow: 0 8px 25px rgba(94, 240, 255, 0.5);
+	transform: translateY(-3px);
+	color: #7ff3ff;
+}
+
+.button.primary {
+	background: linear-gradient(135deg, #5ef0ff 0%, #8a2be2 100%);
+	color: #0a0a1a;
+	border-color: #5ef0ff;
+	box-shadow: 0 4px 20px rgba(94, 240, 255, 0.4);
+}
+
+.button.primary::before {
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.button.primary:hover {
+	background: linear-gradient(135deg, #7ff3ff 0%, #9d4edd 100%);
+	box-shadow: 0 8px 30px rgba(94, 240, 255, 0.7);
+	transform: translateY(-3px);
+	color: #0a0a1a;
+}
+
+/* Botões sem ícones - Design limpo */
+.button.icon {
+	padding: 0.8rem 2rem;
+	position: relative;
+}
+
+/* Remover completamente qualquer ícone ou símbolo */
+.button.icon::before,
+.button.icon::after {
+	content: none !important;
+	display: none !important;
+}
+
+/* Garantir que não há espaçamento extra */
+.button.icon.brands.fa-linkedin::before,
+.button.icon.brands.fa-linkedin::after,
+.button.icon.brands.fa-github::before,
+.button.icon.brands.fa-github::after {
+	content: none !important;
+	display: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Botões em listas */
+ul.actions {
+	list-style: none;
+	padding: 0;
+	margin: 1.5rem 0 0 0;
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+ul.actions li {
+	margin: 0;
+}
+
+/* Botão "Ver Todos os Artigos" - Estilo especial */
+a[href*="blogindex.html"].button {
+	background: linear-gradient(135deg, rgba(138, 43, 226, 0.2) 0%, rgba(94, 240, 255, 0.2) 100%);
+	border: 2px solid #8a2be2;
+	color: #8a2be2;
+	position: relative;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}
+
+a[href*="blogindex.html"].button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(138, 43, 226, 0.4), transparent);
+	transition: all 0.6s ease;
+}
+
+a[href*="blogindex.html"].button:hover::before {
+	left: 100%;
+}
+
+a[href*="blogindex.html"].button:hover {
+	background: linear-gradient(135deg, rgba(138, 43, 226, 0.3) 0%, rgba(94, 240, 255, 0.3) 100%);
+	border-color: #9d4edd;
+	color: #9d4edd;
+	box-shadow: 0 8px 25px rgba(138, 43, 226, 0.5);
+	transform: translateY(-3px);
+}
+
+/* Remover qualquer ícone do botão do blog */
+a[href*="blogindex.html"].button::after {
+	content: none !important;
+	display: none !important;
+}
+
+/* Coming Soon */
+.coming-soon {
+	opacity: 0.6;
+}
+
+.coming-soon strong {
+	color: #5ef0ff;
+}
+
+/* Post Content Styles */
+.post-content h2 {
+	color: #5ef0ff;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-size: 1.8rem;
+}
+
+.post-content h3 {
+	color: #5ef0ff;
+	margin-top: 1.5rem;
+	margin-bottom: 0.8rem;
+	font-size: 1.4rem;
+}
+
+.post-content h4 {
+	color: rgba(94, 240, 255, 0.8);
+	margin-top: 1.2rem;
+	margin-bottom: 0.6rem;
+	font-size: 1.2rem;
+}
+
+.post-content ul,
+.post-content ol {
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+}
+
+.post-content li {
+	margin-bottom: 0.5rem;
+	line-height: 1.8;
+}
+
+.post-content blockquote {
+	border-left: 4px solid #5ef0ff;
+	padding-left: 1.5rem;
+	margin: 1.5rem 0;
+	font-style: italic;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.post-content code {
+	background: rgba(94, 240, 255, 0.1);
+	border: 1px solid rgba(94, 240, 255, 0.3);
+	padding: 0.2rem 0.5rem;
+	border-radius: 4px;
+	font-family: 'Courier New', monospace;
+	color: #5ef0ff;
+}
+
+.post-content pre {
+	background: rgba(26, 26, 46, 0.8);
+	border: 2px solid rgba(94, 240, 255, 0.3);
+	padding: 1.5rem;
+	border-radius: 8px;
+	overflow-x: auto;
+	margin: 1.5rem 0;
+}
+
+.post-content pre code {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+/* Image Styles */
+.post-content img {
+	max-width: 100%;
+	border-radius: 8px;
+	border: 2px solid rgba(94, 240, 255, 0.3);
+	margin: 1.5rem 0;
+}
+
+/* HR separator */
+hr.blog-separator {
+	margin: 3rem 0;
+	border: none;
+	border-top: 2px solid rgba(94, 240, 255, 0.2);
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+	article {
+		padding: 1.5rem;
+	}
+	
+	#banner h1 {
+		font-size: 2rem;
+	}
+	
+	.post-meta {
+		font-size: 0.85rem;
+	}
+}
+
+/* CORREÇÃO CRÍTICA: Sobrescrever regras conflitantes do main.css */
+.posts {
+	display: grid !important;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
+	gap: 2rem !important;
+	margin: 0 !important;
+	width: 100% !important;
+	flex-wrap: unset !important;
+}
+
+.posts article {
+	display: block !important;
+	width: 100% !important;
+	margin: 0 0 2rem 0 !important;
+	flex-grow: unset !important;
+	flex-shrink: unset !important;
+	position: relative !important;
+}
+
+/* Remover pseudo-elementos do main.css */
+.posts article:before,
+.posts article:after {
+	display: none !important;
+}
+
+/* Garantir orientação horizontal do texto */
+.posts article h3,
+.posts article h3 a,
+.posts article p,
+.posts article span,
+.posts article div {
+	writing-mode: horizontal-tb !important;
+	text-orientation: mixed !important;
+	direction: ltr !important;
+	unicode-bidi: normal !important;
+	transform: none !important;
+	display: block !important;
+	width: 100% !important;
+	white-space: normal !important;
+	word-wrap: break-word !important;
+	line-height: 1.4 !important;
+	text-align: left !important;
+}

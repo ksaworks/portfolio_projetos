@@ -98,6 +98,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Detectar idioma atual para texto de carregamento
     function getCurrentLanguageForLoading() {
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const currentPath = window.location.pathname;
+        
+        // Verificar se é página de blog
+        if (currentPath.includes('/blog/')) {
+            if (currentPage === 'blog-en.html') return 'en';
+            if (currentPage === 'blog-es.html') return 'es';
+            if (currentPage === 'blogindex.html') return 'pt-br';
+            // Verificar posts do blog
+            if (currentPage.includes('-en.html')) return 'en';
+            if (currentPage.includes('-es.html')) return 'es';
+            return 'pt-br'; // Default para português
+        }
+        
+        // Páginas principais
         if (currentPage === 'index-en.html') return 'en';
         if (currentPage === 'index-es.html') return 'es';
         return 'pt-br'; // Default para português
@@ -105,47 +119,79 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Textos de carregamento multilíngues
     const LOADING_TEXTS = {
-        'pt-br': 'Carregando Portfólio...',
-        'en': 'Loading Portfolio...',
-        'es': 'Cargando Portafolio...'
+        'pt-br': {
+            portfolio: 'Carregando Portfólio...',
+            blog: 'Carregando Blog...'
+        },
+        'en': {
+            portfolio: 'Loading Portfolio...',
+            blog: 'Loading Blog...'
+        },
+        'es': {
+            portfolio: 'Cargando Portafolio...',
+            blog: 'Cargando Blog...'
+        }
     };
 
     const currentLang = getCurrentLanguageForLoading();
-    const loadingText = LOADING_TEXTS[currentLang] || LOADING_TEXTS['pt-br'];
+    const isBlogPage = window.location.pathname.includes('/blog/');
+    
+    // Só mostrar loading screen se for página de blog
+    if (isBlogPage) {
+        const loadingText = LOADING_TEXTS[currentLang] 
+            ? LOADING_TEXTS[currentLang]['blog']
+            : LOADING_TEXTS['pt-br']['blog'];
 
-    // Loading screen
-    const loadingScreen = document.createElement('div');
-    loadingScreen.id = 'loading-screen';
-    loadingScreen.innerHTML = `
-        <div class="loading-content">
-            <div class="loading-spinner"></div>
-            <p>${loadingText}</p>
-        </div>
-    `;
-    loadingScreen.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease-out;
-    `;
-    
-    document.body.appendChild(loadingScreen);
-    
-    window.addEventListener('load', function() {
-        setTimeout(() => {
-            loadingScreen.style.opacity = '0';
+        // Loading screen
+        const loadingScreen = document.createElement('div');
+        loadingScreen.id = 'loading-screen';
+        loadingScreen.innerHTML = `
+            <div class="loading-content">
+                <div class="loading-spinner"></div>
+                <p>${loadingText}</p>
+            </div>
+        `;
+        loadingScreen.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease-out;
+        `;
+        
+        // Adicionar CSS para remover pseudo-elementos
+        const style = document.createElement('style');
+        style.textContent = `
+            #loading-screen *::before,
+            #loading-screen *::after {
+                content: none !important;
+                display: none !important;
+                visibility: hidden !important;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        document.body.appendChild(loadingScreen);
+        
+        window.addEventListener('load', function() {
             setTimeout(() => {
-                loadingScreen.remove();
-            }, 500);
-        }, 1000);
-    });
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.remove();
+                    // Remover o estilo também
+                    if (style && style.parentNode) {
+                        style.parentNode.removeChild(style);
+                    }
+                }, 500);
+            }, 1000);
+        });
+    }
 });
 
 // Particle system

@@ -3,7 +3,7 @@
 
 /* Garantir que todas as seções sejam visíveis */
 section[id] {
-  display: block !important;
+  /*display: block !important;*/
   visibility: visible !important;
   opacity: 1 !important;
 }

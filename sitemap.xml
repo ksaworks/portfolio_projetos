@@ -35,5 +35,71 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/index-es.html"/>
   </url>
 
+  <!-- Blog Principal (Português) -->
+  <url>
+    <loc>https://ksaworks.github.io/portfolio_projetos/blog/blogindex.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/blog/blogindex.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/blog/blog-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/blog/blog-es.html"/>
+  </url>
+
+  <!-- Blog em Inglês -->
+  <url>
+    <loc>https://ksaworks.github.io/portfolio_projetos/blog/blog-en.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/blog/blogindex.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/blog/blog-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/blog/blog-es.html"/>
+  </url>
+
+  <!-- Blog em Espanhol -->
+  <url>
+    <loc>https://ksaworks.github.io/portfolio_projetos/blog/blog-es.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/blog/blogindex.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/blog/blog-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/blog/blog-es.html"/>
+  </url>
+
+  <!-- Post: Dashboard Almoxarifado (Português) -->
+  <url>
+    <loc>https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-es.html"/>
+  </url>
+
+  <!-- Post: Dashboard Almoxarifado (Inglês) -->
+  <url>
+    <loc>https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-en.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-es.html"/>
+  </url>
+
+  <!-- Post: Dashboard Almoxarifado (Espanhol) -->
+  <url>
+    <loc>https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-es.html</loc>
+    <lastmod>2025-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-en.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-es.html"/>
+  </url>
+
 </urlset>
 

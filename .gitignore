@@ -1,26 +1,56 @@
-# Arquivos do sistema que não devem ser versionados
-.vscode/
-AppData/
-.zenmap/
-*.log
-*.tmp
-
-# Arquivos específicos do Windows
+# Arquivos do sistema
+.DS_Store
 Thumbs.db
-Desktop.ini
+desktop.ini
 
-# Arquivos de backup
-*.bak
-*.backup
+# Arquivos do VS Code
+.vscode/
+*.code-workspace
 
 # Arquivos temporários
+*.tmp
 *.temp
-*.swp
-*.swo
+*.log
 
-# Node modules (se houver)
+# Arquivos de cache
 node_modules/
+.npm
+.yarn
+
+# Arquivos de build
+dist/
+build/
+out/
 
 # Arquivos de configuração local
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de backup
+*.bak
+*.backup
+*.old
+
+# Arquivos de sistema Windows
+AppData/
+Local/
+Temp/
+
+# Arquivos de cache do navegador
+*.cache
+
+# Arquivos de extensões
+*.vsix
+
+# Arquivos de configuração do editor
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos de dependências
+package-lock.json
+yarn.lock
