@@ -616,11 +616,25 @@ a[href*="blogindex.html"].button::after {
 	font-size: 1.8rem;
 }
 
+/* Corrigir espaçamento de ícones nos títulos h2 */
+.post-content h2.icon::before {
+	margin-right: 0.8rem !important;
+	position: relative !important;
+	left: 0 !important;
+}
+
 .post-content h3 {
 	color: #5ef0ff;
 	margin-top: 1.5rem;
 	margin-bottom: 0.8rem;
 	font-size: 1.4rem;
+}
+
+/* Corrigir espaçamento de ícones nos títulos h3 */
+.post-content h3.icon::before {
+	margin-right: 0.8rem !important;
+	position: relative !important;
+	left: 0 !important;
 }
 
 .post-content h4 {
