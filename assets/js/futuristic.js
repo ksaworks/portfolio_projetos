@@ -1,27 +1,14 @@
 // Futuristic Portfolio JavaScript
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    // Smooth scrolling delegada ao CSS nativo (veja futuristic.css html { scroll-behavior: smooth; scroll-padding-top: 100px; })
 
     // Parallax effect for background
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const scrolled = window.pageYOffset;
         const parallax = document.querySelector('body::before');
         const speed = scrolled * 0.5;
-        
+
         // Update background position
         document.body.style.backgroundPosition = `center ${speed}px`;
     });
@@ -32,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
@@ -56,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const text = mainTitle.textContent;
         mainTitle.textContent = '';
         let i = 0;
-        
+
         function typeWriter() {
             if (i < text.length) {
                 mainTitle.textContent += text.charAt(i);
@@ -64,18 +51,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(typeWriter, 50);
             }
         }
-        
+
         setTimeout(typeWriter, 500);
     }
 
     // Glitch effect on hover for project cards
     const projectCards = document.querySelectorAll('.posts article');
     projectCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
+        card.addEventListener('mouseenter', function () {
             this.style.animation = 'glitch 0.3s ease-in-out';
         });
-        
-        card.addEventListener('mouseleave', function() {
+
+        card.addEventListener('mouseleave', function () {
             this.style.animation = '';
         });
     });
@@ -85,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Header scroll effect
     const header = document.getElementById('header');
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 100) {
             header.style.background = 'rgba(26, 26, 46, 0.98)';
             header.style.boxShadow = '0 2px 20px rgba(0, 212, 255, 0.3)';
@@ -99,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function getCurrentLanguageForLoading() {
         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
         const currentPath = window.location.pathname;
-        
+
         // Verificar se é página de blog
         if (currentPath.includes('/blog/')) {
             if (currentPage === 'blog-en.html') return 'en';
@@ -110,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (currentPage.includes('-es.html')) return 'es';
             return 'pt-br'; // Default para português
         }
-        
+
         // Páginas principais
         if (currentPage === 'index-en.html') return 'en';
         if (currentPage === 'index-es.html') return 'es';
@@ -135,10 +122,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const currentLang = getCurrentLanguageForLoading();
     const isBlogPage = window.location.pathname.includes('/blog/');
-    
+
     // Só mostrar loading screen se for página de blog
     if (isBlogPage) {
-        const loadingText = LOADING_TEXTS[currentLang] 
+        const loadingText = LOADING_TEXTS[currentLang]
             ? LOADING_TEXTS[currentLang]['blog']
             : LOADING_TEXTS['pt-br']['blog'];
 
@@ -164,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
             z-index: 9999;
             transition: opacity 0.5s ease-out;
         `;
-        
+
         // Adicionar CSS para remover pseudo-elementos
         const style = document.createElement('style');
         style.textContent = `
@@ -176,10 +163,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         `;
         document.head.appendChild(style);
-        
+
         document.body.appendChild(loadingScreen);
-        
-        window.addEventListener('load', function() {
+
+        window.addEventListener('load', function () {
             setTimeout(() => {
                 loadingScreen.style.opacity = '0';
                 setTimeout(() => {
@@ -225,11 +212,11 @@ function createParticle(container) {
         opacity: 0.7;
         animation: float ${Math.random() * 10 + 5}s linear infinite;
     `;
-    
+
     particle.style.left = Math.random() * 100 + '%';
     particle.style.top = Math.random() * 100 + '%';
     particle.style.animationDelay = Math.random() * 5 + 's';
-    
+
     container.appendChild(particle);
 }
 

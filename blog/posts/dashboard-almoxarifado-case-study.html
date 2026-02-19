@@ -1,22 +1,25 @@
 <!DOCTYPE HTML>
 <html lang="pt-BR">
-	<head>
-		<title>Dashboard de Almoxarifado com ML - Case Study | Kelvin Andrade</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
-		<!-- SEO Meta Tags -->
-		<meta name="description" content="Case study completo: como desenvolvi um dashboard inteligente com Power BI e Machine Learning para otimizar a gestão de estoque na indústria têxtil.">
-		<meta name="keywords" content="dashboard power bi, machine learning, análise de dados, indústria têxtil, python, case study">
-		<meta name="author" content="Kelvin Andrade">
-		
-		<link rel="stylesheet" href="../../assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-		<link rel="stylesheet" href="../../assets/css/futuristic.css" />
-		<link rel="stylesheet" href="../../assets/css/blog.css" />
-		
-		<!-- Schema Markup -->
-		<script type="application/ld+json">
+
+<head>
+	<title>Dashboard de Almoxarifado com ML - Case Study | Kelvin Andrade</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- SEO Meta Tags -->
+	<meta name="description"
+		content="Case study completo: como desenvolvi um dashboard inteligente com Power BI e Machine Learning para otimizar a gestão de estoque na indústria têxtil.">
+	<meta name="keywords"
+		content="dashboard power bi, machine learning, análise de dados, indústria têxtil, python, case study">
+	<meta name="author" content="Kelvin Andrade">
+
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+	<link rel="stylesheet" href="../../assets/css/futuristic.css" />
+	<link rel="stylesheet" href="../../assets/css/blog.css" />
+
+	<!-- Schema Markup -->
+	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
 			"@type": "Article",
@@ -54,368 +57,357 @@
 			}
 		}
 		</script>
-		
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-		<div id="wrapper">
+</head>
 
-			<!-- Main -->
-			<div id="main">
-				<div class="inner">
+<body class="is-preload blog-page">
 
-					<!-- Post Header -->
-					<section id="banner">
-						<div class="content">
-							<header>
-								<h1>📊 Dashboard de Almoxarifado com Machine Learning: Um Case de Sucesso</h1>
-								<div class="post-meta">
-									<span><i class="far fa-calendar"></i> 17 de Outubro, 2025</span>
-									<span><i class="far fa-clock"></i> 15 min de leitura</span>
-									<span><i class="far fa-user"></i> Kelvin Andrade</span>
-								</div>
-								<div class="post-tags">
-									<span class="tag">Power BI</span>
-									<span class="tag">Python</span>
-									<span class="tag">Machine Learning</span>
-									<span class="tag">Indústria Têxtil</span>
-									<span class="tag">Case Study</span>
-								</div>
-							</header>
-						</div>
-					</section>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-					<!-- Post Content -->
-					<section class="post-content">
-						
-						<h2>🎯 O Desafio</h2>
-						<p>
-							Em uma indústria têxtil de médio porte, a gestão do almoxarifado estava se tornando cada vez mais complexa. 
-							Com mais de 1.500 itens em estoque, desde pequenos componentes até grandes rolos de tecido, a equipe 
-							enfrentava diversos problemas:
-						</p>
-						<ul>
-							<li><strong>Rupturas de estoque frequentes</strong> causando paradas na produção</li>
-							<li><strong>Excesso de estoque</strong> de itens de baixo giro, imobilizando capital</li>
-							<li><strong>Dificuldade em identificar padrões</strong> de consumo sazonais</li>
-							<li><strong>Falta de visibilidade</strong> em tempo real do status do almoxarifado</li>
-							<li><strong>Tomada de decisão reativa</strong> ao invés de proativa</li>
-						</ul>
-						
-						<p>
-							A direção precisava de uma solução que não apenas mostrasse o que estava acontecendo, mas que 
-							<strong>previsse o que iria acontecer</strong> e <strong>sugerisse ações</strong> antes que problemas críticos ocorressem.
-						</p>
+		<!-- Header global (FORA DO MAIN para ocupar 100%) -->
+		<header id="header">
+			<a href="../../index.html" class="logo">Portfólio<strong></strong> de Análise de Dados</a>
+			<button class="menu-toggle" aria-label="Abrir Menu">
+				<i class="fas fa-bars"></i>
+			</button>
+			<nav id="nav-menu">
+				<ul>
+					<li><a href="../../index.html#sobre">Sobre</a></li>
+					<li><a href="../../index.html#habilidades">Habilidades</a></li>
+					<li><a href="../../index.html#experiencias">Experiências</a></li>
+					<li><a href="../../index.html#projetos">Projetos</a></li>
+					<li><a href="../blogindex.html">Blog</a></li>
+					<li><a href="../../index.html#contato">Contato</a></li>
+				</ul>
+			</nav>
+			<div id="language-switcher">
+				<a href="dashboard-almoxarifado-case-study.html" class="flag"
+					onclick="event.preventDefault(); changeLanguage('pt-br');" aria-label="Português">
+					<img src="https://flagcdn.com/24x18/br.png" alt="Português">
+				</a>
+				<a href="dashboard-almoxarifado-case-study-en.html" class="flag"
+					onclick="event.preventDefault(); changeLanguage('en');" aria-label="English">
+					<img src="https://flagcdn.com/24x18/us.png" alt="English">
+				</a>
+				<a href="dashboard-almoxarifado-case-study-es.html" class="flag"
+					onclick="event.preventDefault(); changeLanguage('es');" aria-label="Español">
+					<img src="https://flagcdn.com/24x18/es.png" alt="Español">
+				</a>
+			</div>
+		</header>
 
-						<hr class="blog-separator" />
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
 
-						<h2>💡 A Solução</h2>
-						<p>
-							Desenvolvi um <strong>Dashboard Inteligente</strong> que combina o melhor de três mundos:
-						</p>
-						
-						<h3>1. Power BI para Visualização</h3>
-						<p>
-							Escolhi o Power BI como plataforma principal pela sua capacidade de integração com diversas fontes 
-							de dados e pela familiaridade da equipe com a ferramenta. O dashboard foi estruturado em 4 páginas:
-						</p>
-						<ul>
-							<li><strong>Visão Geral:</strong> KPIs principais e alertas críticos</li>
-							<li><strong>Análise de Estoque:</strong> Giro, cobertura e classificação ABC</li>
-							<li><strong>Previsões ML:</strong> Demanda futura e pontos de reposição</li>
-							<li><strong>Relatórios Gerenciais:</strong> Análises detalhadas e drill-down</li>
-						</ul>
+				<!-- Post Header -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h1>📊 Dashboard de Almoxarifado com Machine Learning: Um Case de Sucesso</h1>
+							<div class="post-meta">
+								<span><i class="far fa-calendar"></i> 17 de Outubro, 2025</span>
+								<span><i class="far fa-clock"></i> 15 min de leitura</span>
+								<span><i class="far fa-user"></i> Kelvin Andrade</span>
+							</div>
+							<div class="post-tags">
+								<span class="tag">Power BI</span>
+								<span class="tag">Python</span>
+								<span class="tag">Machine Learning</span>
+								<span class="tag">Indústria Têxtil</span>
+								<span class="tag">Case Study</span>
+							</div>
+						</header>
+					</div>
+				</section>
 
-						<h3>2. Python para Machine Learning</h3>
-						<p>
-							Desenvolvi modelos de ML em Python para adicionar inteligência ao dashboard:
-						</p>
-						<ul>
-							<li><strong>Prophet (Facebook):</strong> Previsão de demanda com sazonalidade</li>
-							<li><strong>Isolation Forest:</strong> Detecção de anomalias no consumo</li>
-							<li><strong>K-Means:</strong> Segmentação inteligente de itens</li>
-						</ul>
+				<!-- Post Content -->
+				<section class="post-content">
 
-						<h3>3. SQL Server para Dados</h3>
-						<p>
-							Estruturei um data warehouse simplificado que consolida dados de:
-						</p>
-						<ul>
-							<li>Sistema ERP (movimentações de estoque)</li>
-							<li>Ordens de produção</li>
-							<li>Histórico de compras</li>
-							<li>Previsões geradas pelos modelos ML</li>
-						</ul>
+					<h2>🎯 O Desafio</h2>
+					<p>
+						Em uma indústria têxtil de médio porte, a gestão do almoxarifado estava se tornando cada vez
+						mais complexa.
+						Com mais de 1.500 itens em estoque, desde pequenos componentes até grandes rolos de tecido, a
+						equipe
+						enfrentava diversos problemas:
+					</p>
+					<ul>
+						<li><strong>Rupturas de estoque frequentes</strong> causando paradas na produção</li>
+						<li><strong>Excesso de estoque</strong> de itens de baixo giro, imobilizando capital</li>
+						<li><strong>Dificuldade em identificar padrões</strong> de consumo sazonais</li>
+						<li><strong>Falta de visibilidade</strong> em tempo real do status do almoxarifado</li>
+						<li><strong>Tomada de decisão reativa</strong> ao invés de proativa</li>
+					</ul>
 
-						<hr class="blog-separator" />
+					<p>
+						A direção precisava de uma solução que não apenas mostrasse o que estava acontecendo, mas que
+						<strong>previsse o que iria acontecer</strong> e <strong>sugerisse ações</strong> antes que
+						problemas críticos ocorressem.
+					</p>
 
-						<h2>🔬 Implementação Técnica</h2>
+					<hr class="blog-separator" />
 
-						<h3>Arquitetura da Solução</h3>
-						<p>
-							A solução foi construída seguindo uma arquitetura de dados moderna e escalável:
-						</p>
-						<ol>
-							<li><strong>Extração:</strong> Jobs SQL extraem dados do ERP diariamente</li>
-							<li><strong>Transformação:</strong> Scripts Python processam e enriquecem os dados</li>
-							<li><strong>Machine Learning:</strong> Modelos retreinados semanalmente</li>
-							<li><strong>Carga:</strong> Dados e previsões carregados no data warehouse</li>
-							<li><strong>Visualização:</strong> Power BI conectado via DirectQuery</li>
-						</ol>
+					<h2>💡 A Solução</h2>
+					<p>
+						Desenvolvi um <strong>Dashboard Inteligente</strong> que combina o melhor de três mundos:
+					</p>
 
-						<h3>Modelos de Machine Learning</h3>
+					<h3>1. Power BI para Visualização</h3>
+					<p>
+						Escolhi o Power BI como plataforma principal pela sua capacidade de integração com diversas
+						fontes
+						de dados e pela familiaridade da equipe com a ferramenta. O dashboard foi estruturado em 4
+						páginas:
+					</p>
+					<ul>
+						<li><strong>Visão Geral:</strong> KPIs principais e alertas críticos</li>
+						<li><strong>Análise de Estoque:</strong> Giro, cobertura e classificação ABC</li>
+						<li><strong>Previsões ML:</strong> Demanda futura e pontos de reposição</li>
+						<li><strong>Relatórios Gerenciais:</strong> Análises detalhadas e drill-down</li>
+					</ul>
 
-						<h4>1. Previsão de Demanda (Prophet)</h4>
-						<p>
-							O modelo Prophet foi escolhido por sua robustez em lidar com sazonalidade e dados faltantes. 
-							Principais características:
-						</p>
-						<ul>
-							<li>Previsão de 30 dias para frente</li>
-							<li>Intervalo de confiança de 95%</li>
-							<li>Ajuste automático para feriados e paradas programadas</li>
-							<li>Retraining semanal com novos dados</li>
-						</ul>
+					<h3>2. Python para Machine Learning</h3>
+					<p>
+						Desenvolvi modelos de ML em Python para adicionar inteligência ao dashboard:
+					</p>
+					<ul>
+						<li><strong>Prophet (Facebook):</strong> Previsão de demanda com sazonalidade</li>
+						<li><strong>Isolation Forest:</strong> Detecção de anomalias no consumo</li>
+						<li><strong>K-Means:</strong> Segmentação inteligente de itens</li>
+					</ul>
 
-						<h4>2. Detecção de Anomalias (Isolation Forest)</h4>
-						<p>
-							Implementei um sistema de alertas que identifica padrões anormais de consumo:
-						</p>
-						<ul>
-							<li>Consumo muito acima ou abaixo do esperado</li>
-							<li>Mudanças súbitas no padrão de demanda</li>
-							<li>Possíveis erros de lançamento</li>
-						</ul>
+					<h3>3. SQL Server para Dados</h3>
+					<p>
+						Estruturei um data warehouse simplificado que consolida dados de:
+					</p>
+					<ul>
+						<li>Sistema ERP (movimentações de estoque)</li>
+						<li>Ordens de produção</li>
+						<li>Histórico de compras</li>
+						<li>Previsões geradas pelos modelos ML</li>
+					</ul>
 
-						<h4>3. Classificação Inteligente (K-Means)</h4>
-						<p>
-							Além da tradicional Curva ABC, criei uma segmentação multidimensional considerando:
-						</p>
-						<ul>
-							<li>Valor financeiro</li>
-							<li>Criticidade operacional</li>
-							<li>Previsibilidade de demanda</li>
-							<li>Lead time de fornecimento</li>
-						</ul>
+					<hr class="blog-separator" />
 
-						<hr class="blog-separator" />
+					<h2>🔬 Implementação Técnica</h2>
 
-						<h2>📊 Funcionalidades do Dashboard</h2>
+					<h3>Arquitetura da Solução</h3>
+					<p>
+						A solução foi construída seguindo uma arquitetura de dados moderna e escalável:
+					</p>
+					<ol>
+						<li><strong>Extração:</strong> Jobs SQL extraem dados do ERP diariamente</li>
+						<li><strong>Transformação:</strong> Scripts Python processam e enriquecem os dados</li>
+						<li><strong>Machine Learning:</strong> Modelos retreinados semanalmente</li>
+						<li><strong>Carga:</strong> Dados e previsões carregados no data warehouse</li>
+						<li><strong>Visualização:</strong> Power BI conectado via DirectQuery</li>
+					</ol>
 
-						<h3>KPIs Principais</h3>
-						<p>Métricas apresentadas em tempo real:</p>
-						<ul>
-							<li><strong>Valor Total em Estoque:</strong> Com variação % mensal</li>
-							<li><strong>Itens em Ruptura:</strong> Quantidade e impacto financeiro</li>
-							<li><strong>Itens em Excesso:</strong> Valor imobilizado e tempo de cobertura</li>
-							<li><strong>Acurácia das Previsões:</strong> MAPE dos modelos ML</li>
-							<li><strong>Taxa de Atendimento:</strong> % de requisições atendidas sem atraso</li>
-						</ul>
+					<h3>Modelos de Machine Learning</h3>
 
-						<h3>Alertas Inteligentes</h3>
-						<p>Sistema de notificações automáticas:</p>
-						<ul>
-							<li>🔴 <strong>Crítico:</strong> Ruptura iminente (menos de 3 dias)</li>
-							<li>🟡 <strong>Atenção:</strong> Estoque abaixo do ponto de reposição</li>
-							<li>🟢 <strong>Oportunidade:</strong> Sugestão de redução de estoque</li>
-							<li>🔵 <strong>Anomalia:</strong> Padrão de consumo fora do esperado</li>
-						</ul>
+					<h4>1. Previsão de Demanda (Prophet)</h4>
+					<p>
+						O modelo Prophet foi escolhido por sua robustez em lidar com sazonalidade e dados faltantes.
+						Principais características:
+					</p>
+					<ul>
+						<li>Previsão de 30 dias para frente</li>
+						<li>Intervalo de confiança de 95%</li>
+						<li>Ajuste automático para feriados e paradas programadas</li>
+						<li>Retraining semanal com novos dados</li>
+					</ul>
 
-						<h3>Análises Avançadas</h3>
-						<ul>
-							<li><strong>What-If Analysis:</strong> Simulação de cenários de demanda</li>
-							<li><strong>Drill-Down:</strong> Análise detalhada item a item</li>
-							<li><strong>Correlações:</strong> Identificação de itens com demanda correlacionada</li>
-							<li><strong>Tendências:</strong> Análise de padrões ao longo do tempo</li>
-						</ul>
+					<h4>2. Detecção de Anomalias (Isolation Forest)</h4>
+					<p>
+						Implementei um sistema de alertas que identifica padrões anormais de consumo:
+					</p>
+					<ul>
+						<li>Consumo muito acima ou abaixo do esperado</li>
+						<li>Mudanças súbitas no padrão de demanda</li>
+						<li>Possíveis erros de lançamento</li>
+					</ul>
 
-						<hr class="blog-separator" />
+					<h4>3. Classificação Inteligente (K-Means)</h4>
+					<p>
+						Além da tradicional Curva ABC, criei uma segmentação multidimensional considerando:
+					</p>
+					<ul>
+						<li>Valor financeiro</li>
+						<li>Criticidade operacional</li>
+						<li>Previsibilidade de demanda</li>
+						<li>Lead time de fornecimento</li>
+					</ul>
 
-						<h2>🎉 Resultados</h2>
-						<p>
-							Após 6 meses de uso, os resultados foram extraordinários:
-						</p>
+					<hr class="blog-separator" />
 
-						<h3>Impacto Operacional</h3>
-						<ul>
-							<li>✅ <strong>Redução de 68% nas rupturas de estoque</strong> (de 12% para 3,8%)</li>
-							<li>✅ <strong>Diminuição de 42% no excesso de estoque</strong></li>
-							<li>✅ <strong>Melhoria de 35% na taxa de atendimento</strong> às requisições</li>
-							<li>✅ <strong>Redução de 28% nas paradas de produção</strong> por falta de material</li>
-						</ul>
+					<h2>📊 Funcionalidades do Dashboard</h2>
 
-						<h3>Impacto Financeiro</h3>
-						<ul>
-							<li>💰 <strong>Economia de R$ 180.000/ano</strong> com redução de estoque</li>
-							<li>💰 <strong>Redução de 15% nos custos de compras emergenciais</strong></li>
-							<li>💰 <strong>ROI de 320%</strong> no primeiro ano</li>
-						</ul>
+					<h3>KPIs Principais</h3>
+					<p>Métricas apresentadas em tempo real:</p>
+					<ul>
+						<li><strong>Valor Total em Estoque:</strong> Com variação % mensal</li>
+						<li><strong>Itens em Ruptura:</strong> Quantidade e impacto financeiro</li>
+						<li><strong>Itens em Excesso:</strong> Valor imobilizado e tempo de cobertura</li>
+						<li><strong>Acurácia das Previsões:</strong> MAPE dos modelos ML</li>
+						<li><strong>Taxa de Atendimento:</strong> % de requisições atendidas sem atraso</li>
+					</ul>
 
-						<h3>Impacto Estratégico</h3>
-						<ul>
-							<li>🎯 <strong>Tempo de análise reduzido de horas para minutos</strong></li>
-							<li>🎯 <strong>Decisões baseadas em dados</strong> ao invés de intuição</li>
-							<li>🎯 <strong>Maior confiança nas previsões</strong> de demanda</li>
-							<li>🎯 <strong>Cultura data-driven</strong> fortalecida na organização</li>
-						</ul>
+					<h3>Alertas Inteligentes</h3>
+					<p>Sistema de notificações automáticas:</p>
+					<ul>
+						<li>🔴 <strong>Crítico:</strong> Ruptura iminente (menos de 3 dias)</li>
+						<li>🟡 <strong>Atenção:</strong> Estoque abaixo do ponto de reposição</li>
+						<li>🟢 <strong>Oportunidade:</strong> Sugestão de redução de estoque</li>
+						<li>🔵 <strong>Anomalia:</strong> Padrão de consumo fora do esperado</li>
+					</ul>
 
-						<hr class="blog-separator" />
+					<h3>Análises Avançadas</h3>
+					<ul>
+						<li><strong>What-If Analysis:</strong> Simulação de cenários de demanda</li>
+						<li><strong>Drill-Down:</strong> Análise detalhada item a item</li>
+						<li><strong>Correlações:</strong> Identificação de itens com demanda correlacionada</li>
+						<li><strong>Tendências:</strong> Análise de padrões ao longo do tempo</li>
+					</ul>
 
-						<h2>🧠 Lições Aprendidas</h2>
+					<hr class="blog-separator" />
 
-						<h3>1. Começe Simples, Evolua Gradualmente</h3>
-						<p>
-							Inicialmente, tentei implementar tudo de uma vez. Erro! A complexidade assustou os usuários. 
-							A solução foi lançar um MVP com funcionalidades essenciais e adicionar complexidade conforme 
-							a maturidade da equipe aumentava.
-						</p>
+					<h2>🎉 Resultados</h2>
+					<p>
+						Após 6 meses de uso, os resultados foram extraordinários:
+					</p>
 
-						<h3>2. Machine Learning Não é Bala de Prata</h3>
-						<p>
-							Os modelos de ML são poderosos, mas não substituem o conhecimento do negócio. As melhores 
-							previsões vieram da <strong>combinação</strong> entre algoritmos e ajustes manuais baseados 
-							na experiência da equipe.
-						</p>
+					<h3>Impacto Operacional</h3>
+					<ul>
+						<li>✅ <strong>Redução de 68% nas rupturas de estoque</strong> (de 12% para 3,8%)</li>
+						<li>✅ <strong>Diminuição de 42% no excesso de estoque</strong></li>
+						<li>✅ <strong>Melhoria de 35% na taxa de atendimento</strong> às requisições</li>
+						<li>✅ <strong>Redução de 28% nas paradas de produção</strong> por falta de material</li>
+					</ul>
 
-						<h3>3. UX é Fundamental</h3>
-						<p>
-							Um dashboard tecnicamente perfeito que ninguém usa não tem valor. Investi tempo significativo 
-							em design, usabilidade e treinamento. O resultado: adoção de 95% pela equipe.
-						</p>
+					<h3>Impacto Financeiro</h3>
+					<ul>
+						<li>💰 <strong>Economia de R$ 180.000/ano</strong> com redução de estoque</li>
+						<li>💰 <strong>Redução de 15% nos custos de compras emergenciais</strong></li>
+						<li>💰 <strong>ROI de 320%</strong> no primeiro ano</li>
+					</ul>
 
-						<h3>4. Dados de Qualidade são Essenciais</h3>
-						<p>
-							Gastei 40% do tempo do projeto apenas limpando e padronizando dados históricos. Essa base 
-							sólida foi crucial para o sucesso dos modelos de ML.
-						</p>
+					<h3>Impacto Estratégico</h3>
+					<ul>
+						<li>🎯 <strong>Tempo de análise reduzido de horas para minutos</strong></li>
+						<li>🎯 <strong>Decisões baseadas em dados</strong> ao invés de intuição</li>
+						<li>🎯 <strong>Maior confiança nas previsões</strong> de demanda</li>
+						<li>🎯 <strong>Cultura data-driven</strong> fortalecida na organização</li>
+					</ul>
 
-						<h3>5. Automatize Tudo que Puder</h3>
-						<p>
-							A manutenção manual de modelos e relatórios é insustentável. Automatizei ETL, retraining de 
-							modelos, e distribuição de relatórios. Resultado: solução sustentável a longo prazo.
-						</p>
+					<hr class="blog-separator" />
 
-						<hr class="blog-separator" />
+					<h2>🧠 Lições Aprendidas</h2>
 
-						<h2>🚀 Próximos Passos</h2>
-						<p>
-							O projeto continua evoluindo. Estou trabalhando em:
-						</p>
-						<ul>
-							<li><strong>Otimização de Pedidos:</strong> Algoritmo para sugerir quantidades ótimas de compra</li>
-							<li><strong>Integração com IoT:</strong> Sensores de nível em tanques e silos</li>
-							<li><strong>App Mobile:</strong> Alertas e consultas em dispositivos móveis</li>
-							<li><strong>BI Conversacional:</strong> Consultas por voz usando NLP</li>
-						</ul>
+					<h3>1. Começe Simples, Evolua Gradualmente</h3>
+					<p>
+						Inicialmente, tentei implementar tudo de uma vez. Erro! A complexidade assustou os usuários.
+						A solução foi lançar um MVP com funcionalidades essenciais e adicionar complexidade conforme
+						a maturidade da equipe aumentava.
+					</p>
 
-						<hr class="blog-separator" />
+					<h3>2. Machine Learning Não é Bala de Prata</h3>
+					<p>
+						Os modelos de ML são poderosos, mas não substituem o conhecimento do negócio. As melhores
+						previsões vieram da <strong>combinação</strong> entre algoritmos e ajustes manuais baseados
+						na experiência da equipe.
+					</p>
 
-						<h2>💭 Conclusão</h2>
-						<p>
-							Este projeto demonstra que a verdadeira transformação digital não vem apenas de ferramentas 
-							avançadas, mas da <strong>combinação inteligente</strong> entre tecnologia, processos e pessoas.
-						</p>
-						<p>
-							O sucesso do Dashboard de Almoxarifado provou que é possível trazer soluções de ponta para 
-							empresas de médio porte, gerando valor real e mensurável.
-						</p>
-						<p>
-							<strong>A mensagem principal?</strong> Você não precisa de Big Data ou orçamentos milionários 
-							para fazer Machine Learning gerar resultados. Precisa de dados de qualidade, perguntas certas, 
-							e muito trabalho duro.
-						</p>
+					<h3>3. UX é Fundamental</h3>
+					<p>
+						Um dashboard tecnicamente perfeito que ninguém usa não tem valor. Investi tempo significativo
+						em design, usabilidade e treinamento. O resultado: adoção de 95% pela equipe.
+					</p>
 
-						<hr class="blog-separator" />
+					<h3>4. Dados de Qualidade são Essenciais</h3>
+					<p>
+						Gastei 40% do tempo do projeto apenas limpando e padronizando dados históricos. Essa base
+						sólida foi crucial para o sucesso dos modelos de ML.
+					</p>
 
-						<h2>📬 Quer Saber Mais?</h2>
-						<p>
-							Se você tem interesse em implementar uma solução similar na sua empresa ou quer discutir 
-							detalhes técnicos deste projeto, entre em contato!
-						</p>
-						<ul class="actions">
-							<li><a href="https://www.linkedin.com/in/kelvinandradeworks/" class="button primary icon brands fa-linkedin" target="_blank" rel="noopener">Conectar no LinkedIn</a></li>
-							<li><a href="mailto:kelvinstaandrade@gmail.com" class="button icon solid fa-envelope">Enviar Email</a></li>
-							<li><a href="../blogindex.html" class="button">Voltar ao Blog</a></li>
-						</ul>
+					<h3>5. Automatize Tudo que Puder</h3>
+					<p>
+						A manutenção manual de modelos e relatórios é insustentável. Automatizei ETL, retraining de
+						modelos, e distribuição de relatórios. Resultado: solução sustentável a longo prazo.
+					</p>
 
-					</section>
+					<hr class="blog-separator" />
 
-				</div>
+					<h2>🚀 Próximos Passos</h2>
+					<p>
+						O projeto continua evoluindo. Estou trabalhando em:
+					</p>
+					<ul>
+						<li><strong>Otimização de Pedidos:</strong> Algoritmo para sugerir quantidades ótimas de compra
+						</li>
+						<li><strong>Integração com IoT:</strong> Sensores de nível em tanques e silos</li>
+						<li><strong>App Mobile:</strong> Alertas e consultas em dispositivos móveis</li>
+						<li><strong>BI Conversacional:</strong> Consultas por voz usando NLP</li>
+					</ul>
+
+					<hr class="blog-separator" />
+
+					<h2>💭 Conclusão</h2>
+					<p>
+						Este projeto demonstra que a verdadeira transformação digital não vem apenas de ferramentas
+						avançadas, mas da <strong>combinação inteligente</strong> entre tecnologia, processos e pessoas.
+					</p>
+					<p>
+						O sucesso do Dashboard de Almoxarifado provou que é possível trazer soluções de ponta para
+						empresas de médio porte, gerando valor real e mensurável.
+					</p>
+					<p>
+						<strong>A mensagem principal?</strong> Você não precisa de Big Data ou orçamentos milionários
+						para fazer Machine Learning gerar resultados. Precisa de dados de qualidade, perguntas certas,
+						e muito trabalho duro.
+					</p>
+
+					<hr class="blog-separator" />
+
+					<h2>📬 Quer Saber Mais?</h2>
+					<p>
+						Se você tem interesse em implementar uma solução similar na sua empresa ou quer discutir
+						detalhes técnicos deste projeto, entre em contato!
+					</p>
+					<ul class="actions" style="justify-content: center; gap: 1.5rem; margin-top: 2rem;">
+						<li><a href="https://www.linkedin.com/in/kelvinandradeworks/" class="button primary"
+								target="_blank" rel="noopener"><i class="fab fa-linkedin"
+									style="margin-right: 8px;"></i>Conectar
+								no LinkedIn</a></li>
+						<li><a href="mailto:kelvinstaandrade@gmail.com" class="button primary"><i
+									class="fas fa-envelope" style="margin-right: 8px;"></i>Enviar
+								Email</a></li>
+						<li><a href="../blogindex.html" class="button"><i class="fas fa-arrow-left"
+									style="margin-right: 8px;"></i>Voltar ao Blog</a></li>
+					</ul>
+
+				</section>
+
 			</div>
 
-			<!-- Sidebar -->
-			<div id="sidebar">
-				<div class="inner">
-
-					<!-- Menu -->
-					<nav id="menu">
-						<header class="major">
-							<h2>Menu</h2>
-						</header>
-						<ul>
-							<li><a href="../../index.html">Início</a></li>
-							<li><a href="../../index.html#sobre">Sobre</a></li>
-							<li><a href="../../index.html#projetos">Projetos</a></li>
-							<li><a href="../blogindex.html">Blog</a></li>
-							<li><a href="../../index.html#contato">Contato</a></li>
-						</ul>
-					</nav>
-
-					<!-- Artigos Relacionados -->
-					<section>
-						<header class="major">
-							<h2>Artigos Relacionados</h2>
-						</header>
-						<div class="mini-posts">
-							<article>
-								<p class="coming-soon">
-									<strong>🔜 Em Breve</strong><br/>
-									Machine Learning na Indústria Têxtil: Oportunidades e Desafios
-								</p>
-							</article>
-							<article>
-								<p class="coming-soon">
-									<strong>🔜 Em Breve</strong><br/>
-									Power BI vs Python: Quando Usar Cada Ferramenta?
-								</p>
-							</article>
-						</div>
-						<ul class="actions">
-							<li><a href="../blogindex.html" class="button">Ver Todos os Artigos</a></li>
-						</ul>
-					</section>
-
-					<!-- Contact -->
-					<section>
-						<header class="major">
-							<h2>Contato</h2>
-						</header>
-						<ul class="contact">
-							<li class="icon solid fa-envelope"><a href="mailto:kelvinstaandrade@gmail.com">kelvinstaandrade@gmail.com</a></li>
-							<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/kelvinandradeworks/" target="_blank" rel="noopener">LinkedIn</a></li>
-							<li class="icon brands fa-github"><a href="https://github.com/ksaworks" target="_blank" rel="noopener">GitHub</a></li>
-						</ul>
-					</section>
-
-					<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; 2025 Kelvin Andrade.</p>
-					</footer>
-
-				</div>
-			</div>
-
+			<!-- Footer -->
+			<footer id="footer" style="padding: 2em 0; text-align: center;">
+				<p class="copyright">&copy; 2025 Kelvin Andrade. Todos os direitos reservados.</p>
+			</footer>
 		</div>
 
-		<!-- Scripts -->
-		<script src="../../assets/js/jquery.min.js"></script>
-		<script src="../../assets/js/browser.min.js"></script>
-		<script src="../../assets/js/breakpoints.min.js"></script>
-		<script src="../../assets/js/util.js"></script>
-		<script src="../../assets/js/main.js"></script>
-		<script src="../../assets/js/language-detection.js"></script>
-		<script src="../../assets/js/futuristic.js"></script>
+	</div>
 
-	</body>
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+	<script src="../../assets/js/language-detection.js"></script>
+	<script src="../../assets/js/futuristic.js"></script>
+
+</body>
+
 </html>

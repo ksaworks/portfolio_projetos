@@ -8,6 +8,30 @@ body {
 	color: rgba(255, 255, 255, 0.9);
 }
 
+/* Layout do Blog (Sem Sidebar) - Ocupar 100% e centralizar o main */
+body.blog-page #wrapper {
+	display: block;
+	/* Remove o flex do layout com sidebar original */
+	width: 100%;
+}
+
+body.blog-page #header {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+body.blog-page #main {
+	width: 100%;
+	max-width: 1200px;
+	/* Largura máxima do conteúdo */
+	margin: 0 auto;
+	/* Centraliza a coluna principal */
+	padding-top: 2rem;
+}
+
 /* Cards/Articles */
 article {
 	background: rgba(26, 26, 46, 0.8);
@@ -190,11 +214,11 @@ article h3 a:hover {
 		padding: 0.8rem 1rem;
 		font-size: 0.8rem;
 	}
-	
+
 	.breadcrumbs li {
 		margin-right: 0.3rem;
 	}
-	
+
 	.breadcrumbs li:not(:last-child)::after {
 		margin-left: 0.3rem;
 	}
@@ -202,19 +226,20 @@ article h3 a:hover {
 
 /* Responsive para posts do blog */
 @media screen and (max-width: 768px) {
+
 	/* Corrigir layout do main em mobile para posts */
-	#main > .inner {
+	#main>.inner {
 		padding: 0 1rem !important;
 		margin: 0 !important;
 		max-width: 100% !important;
 	}
-	
-	#main > .inner > section {
+
+	#main>.inner>section {
 		padding: 2rem 0 !important;
 		margin: 0 !important;
 		border-top: none !important;
 	}
-	
+
 	/* Garantir que o conteúdo dos posts seja visível */
 	.post-content {
 		padding: 1rem !important;
@@ -227,7 +252,7 @@ article h3 a:hover {
 		position: relative !important;
 		z-index: 1 !important;
 	}
-	
+
 	.post-content h2,
 	.post-content h3,
 	.post-content p,
@@ -243,36 +268,36 @@ article h3 a:hover {
 		margin: 1rem 0 !important;
 		padding: 0 !important;
 	}
-	
+
 	.post-content h2 {
 		font-size: 1.5rem !important;
 		color: #5ef0ff !important;
 		margin-bottom: 1rem !important;
 	}
-	
+
 	.post-content h3 {
 		font-size: 1.3rem !important;
 		color: #5ef0ff !important;
 		margin-bottom: 0.8rem !important;
 	}
-	
+
 	.post-content p {
 		font-size: 1rem !important;
 		line-height: 1.6 !important;
 		color: rgba(255, 255, 255, 0.9) !important;
 		margin-bottom: 1rem !important;
 	}
-	
+
 	.post-content ul {
 		margin: 1rem 0 !important;
 		padding-left: 1.5rem !important;
 	}
-	
+
 	.post-content li {
 		margin: 0.5rem 0 !important;
 		color: rgba(255, 255, 255, 0.9) !important;
 	}
-	
+
 	.post-content blockquote {
 		border-left: 3px solid #5ef0ff !important;
 		padding-left: 1rem !important;
@@ -280,7 +305,7 @@ article h3 a:hover {
 		font-style: italic !important;
 		color: rgba(255, 255, 255, 0.8) !important;
 	}
-	
+
 	/* Resultados grid responsivo */
 	.results-grid {
 		display: grid !important;
@@ -288,17 +313,17 @@ article h3 a:hover {
 		gap: 1rem !important;
 		margin: 1rem 0 !important;
 	}
-	
+
 	.result-item {
 		padding: 1rem !important;
 		text-align: center !important;
 	}
-	
+
 	.result-item h4 {
 		font-size: 1.2rem !important;
 		margin-bottom: 0.5rem !important;
 	}
-	
+
 	/* Tags responsivas */
 	.post-tags {
 		display: flex !important;
@@ -306,30 +331,30 @@ article h3 a:hover {
 		gap: 0.5rem !important;
 		margin: 1rem 0 !important;
 	}
-	
+
 	.post-tags .tag {
 		padding: 0.3rem 0.8rem !important;
 		font-size: 0.8rem !important;
 	}
-	
+
 	/* CTA section responsivo */
 	.cta-section {
 		margin: 2rem 0 !important;
 		text-align: center !important;
 	}
-	
+
 	.cta-section h3 {
 		font-size: 1.3rem !important;
 		margin-bottom: 1rem !important;
 	}
-	
+
 	.cta-section .actions {
 		display: flex !important;
 		flex-direction: column !important;
 		gap: 0.8rem !important;
 		align-items: center !important;
 	}
-	
+
 	.cta-section .button {
 		width: 100% !important;
 		max-width: 300px !important;
@@ -343,19 +368,19 @@ article h3 a:hover {
 	.post-content {
 		padding: 0.8rem !important;
 	}
-	
+
 	.post-content h2 {
 		font-size: 1.3rem !important;
 	}
-	
+
 	.post-content h3 {
 		font-size: 1.1rem !important;
 	}
-	
+
 	.post-content p {
 		font-size: 0.9rem !important;
 	}
-	
+
 	.cta-section .button {
 		padding: 0.7rem 1.2rem !important;
 		font-size: 0.8rem !important;
@@ -523,7 +548,7 @@ article h3 a:hover {
 	position: relative;
 }
 
-/* Remover completamente qualquer ícone ou símbolo */
+/* Remover completamente pseudo-elementos antigos via CSS font-awesome content */
 .button.icon::before,
 .button.icon::after {
 	content: none !important;
@@ -593,10 +618,8 @@ a[href*="blogindex.html"].button:hover {
 	transform: translateY(-3px);
 }
 
-/* Remover qualquer ícone do botão do blog */
-a[href*="blogindex.html"].button::after {
-	content: none !important;
-	display: none !important;
+a[href*="blogindex.html"].button::before {
+	/* Mantém animação background */
 }
 
 /* Coming Soon */
@@ -707,11 +730,11 @@ hr.blog-separator {
 	article {
 		padding: 1.5rem;
 	}
-	
+
 	#banner h1 {
 		font-size: 2rem;
 	}
-	
+
 	.post-meta {
 		font-size: 0.85rem;
 	}
