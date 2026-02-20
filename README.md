@@ -1,8 +1,8 @@
-# 👋 Kelvin Andrade | Analista de Dados
+# 👋 Kelvin Andrade | Analista de Dados & Engenheiro de Analytics
 
 <p align="center">
-  <strong>Transformando dados em decisões estratégicas</strong><br>
-  Especialista em SQL, Power BI e Python com foco em otimização de processos e redução de custos
+  <strong>Projetando arquiteturas complexas e inteligência de negócios</strong><br>
+  Líder técnico focado no Ecossistema Sankhya, Banco de Dados Oracle Avançado, desenvolvimento de Single Page Applications (SPAs) analíticas e Lógicas Contábeis/Industriais complexas.
 </p>
 
 <p align="center">
@@ -16,42 +16,60 @@
 
 ## 🎯 Sobre Mim
 
-Sou **Analista de Dados** com mais de 7 anos de experiência no varejo e infraestrutura corporativa, especializado em eficiência operacional e inteligência de negócios. Atualmente, atuo como **Analista de Dados na Fiação Itabaiana**, desenvolvendo relatórios estratégicos e painéis de controle em tempo real para tomada de decisões executivas.
+Sou um **Analista de Dados & Engenheiro de Analytics** com grande foco na intersecção entre inteligência de negócios, engenharia de dados pesada e desenvolvimento customizado de sistemas operacionais analíticos. Atualmente, atuo na **Fiação Itabaiana**, liderando a criação de painéis complexos e ferramentas web diretamente injetadas no ERP Corporativo (Sankhya), impactando com dados em tempo real desde a planta fabril até o núcleo estratégico de Controladoria e Finanças.
 
-Meu diferencial é a **visão sistêmica e de negócios**: domino desde a cultura ágil de **Melhoria Contínua** (PDCA, Kanban, Kaizen) até a construção técnica das soluções (Dashboards, APIs e automações), integrando fontes de ERP, Cloud e Machine Learning na operação diária.
+Meu maior diferencial técnico é não depender apenas das entregas triviais de "drag and drop" do BI tradicional. **Desenvolvo lógicas financeiras massivas (DRE, PMP, NCG) diretamente em backend no Oracle (CTEs, Hierarquias de Query, PL/SQL, Window Functions)** e crio arquiteturas responsivas baseadas no conceito de **Single Page Application (SPA)** injetando HTML/JS diretamente nos ecossistemas B2B para elevar a experiência visual à classe corporativa e superar os limites técnicos triviais. Gero resultados via metodologias Ágeis de Produto de Dados (Kanban iterativo em níveis de Diretoria Executiva).
 
-### 💡 O que faço:
+### 💡 O que de fato construo e entrego:
 
-- 📊 Criação de dashboards executivos no Power BI com foco em KPIs de negócio
-- 🔍 Análises avançadas usando SQL, Python e Excel
-- 🤖 Automações de processos e análises recorrentes com Python
-- 📈 Análises de RFM, Cohort, Pareto e métricas de negócio
-- 📉 Visualização de dados para tomada de decisão estratégica
+- 📊 Engenharias Reversas de Processos Corporativos (ERPs Nativos) e arquiteturas escaláveis em Bancos de Dados Relacionais B2B.
+- 🔍 Ferramentas exclusivas em formato SPA acopladas a Dashboards, consumindo o coração (backend) do Sankhya via JDBC Driver para renderizar inteligência viva através de Javascript e Vue.
+- 🤖 Modelagem e extração complexa de dados corporativos (Ex: Cálculo de OEE, Tempo Real de Máquinas, Saldo de Conta e Precificação).
+- 📈 Projetos em portfólio unindo lógicas complexas e métricas para maximização de capital de giro e minimização de rupturas.
+- 📉 Orientação a Frameworks de Melhoria Contínua: PDCA e Kaizen orientados a resultados pragmáticos nas demonstrações de resultado do negócio.
 
 ---
 
 ## 🛠️ Stack Técnica
 
-### 📊 Business Intelligence & Analytics
-- **Power BI:** DAX, modelagem dimensional, storytelling com dados
-- **SQL:** Consultas complexas, CTEs, Window Functions, otimização de queries
-- **Excel:** Power Query, tabelas dinâmicas, análises avançadas
+### 📊 Business Intelligence & Analytics Corporativo
+- **Bancos de Dados B2B & Engenharia Pesada:** Oracle (Especialista), PostgreSQL, SQLite.
+- **SQL Avançado & PL/SQL:** CTEs complexas, Window Functions, CONNECT BY PRIOR (modelagem de hierarquias estruturais Sankhya) e Procedures financeiras.
+- **Power BI:** DAX avançado, modelagem extrema e arquitetura para análises profundas.
 
-### 🐍 Ciência de Dados & Automação
-- **Python:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-- **Machine Learning:** Classificação, Regressão, Clusterização (K-Means)
-- **Análises:** Cohort Analysis, RFM, Análise de Pareto, Métricas AARRR
+### 💻 Desenvolvimento Frontend & Sistemas Operacionais (SPA)
+- **Aplicações Nativas (Injeção ERP):** Criação de sistemas web (HTML, CSS e JavaScript Vanilla/Vue.js) hospedados diretamente nas plataformas (Nativo Sankhya BI).
+- **DOM Manipulation & Gráficos Web:** Integração de bibliotecas visuais como Chart.js e ApexCharts sob iframes/modais dinâmicos.
+- **Desenvolvimento Backend:** Python e PHP (Laravel/Filament) para criação de painéis e ferramentas de apoio autônomas. Consumo de APIs (REST/SOAP).
 
-### 💻 Ferramentas & Sistemas
-- **Controle de Versão:** Git/GitHub
-- **ERPs:** MicroStrategy, Consinco
-- **Banco de Dados:** PostgreSQL, SQLite
+### ⚙️ Lógica de Negócios & Frameworks Ágeis
+- **Métricas Industriais:** RPM, OEE (Overall Equipment Effectiveness) e análise causal de rupturas em chãos de fábrica (Cardas/Open-Ends).
+- **Cálculos Financeiros/Contábeis:** NCG (Necessidade de Capital de Giro), ROB (Receita Operacional Bruta), DRE e PMP (Preço Médio Ponderado).
+- **Gestão & Qualidade:** Metodologias Ágeis (Kanban Executivo), PDCA, Kaizen, Data Governance e Engenharia Reversa.
 
 ---
 
-## 🚀 Projetos de Análise de Dados
+## 🚀 Projetos Relevantes de Análise de Dados
 
-### 📈 [Análise de Cohort - Superstore](https://github.com/ksaworks)
+### 🏢 Plataforma de Gestão Financeira e Controladoria (Sankhya ERP)
+Aplicação estilo SPA construída via HTML/JS dentro do ERP. Realiza engenharia reversa no Oracle para reconstrução de saldos bancários, cálculo de PMP e segmentação de inadimplência em tempo real.
+**Tech Stack:** Sankhya BI, Oracle SQL, JavaScript/HTML, Chart.js  
+
+---
+
+### 🏭 Monitoramento de Gestão Industrial (Open-End & Cardas)
+Dashboard de alta performance integrado via JDBC Oracle para o chão de fábrica. Controle de eficiência, velocidade (RPM) e rupturas via filtros globais de contexto.
+**Tech Stack:** Sankhya BI, Oracle SQL, JS DOM Manipulation  
+
+---
+
+### 📦 Inteligência de Estoque e Giro de Caixa
+Painel com lógica pesada de consolidação no banco de dados para analisar valores, distribuição, obsolescência e giro (Consumo vs. Entrada).
+**Tech Stack:** Oracle PL/SQL, Advanced Data Modeling  
+
+---
+
+### 📉 [Dashboard de Almoxarifado com Machine Learning](https://github.com/ksaworks/dashboard-almoxarifado)
 Estudo de retenção de clientes ao longo do tempo com identificação de padrões de comportamento de compra.
 
 **Tech Stack:** Python, Pandas, Matplotlib  
@@ -85,15 +103,14 @@ Análises avançadas utilizando Excel para métricas operacionais e financeiras.
 
 ## 💼 Experiência Profissional
 
-### 🏢 Analista de Dados | Fiação Itabaiana
+### 🏢 Analista de Dados & Engenheiro de Analytics | Fiação Itabaiana
 **Agosto/2024 - Atual** | Ribeirópolis, SE
 
-**Principais Responsabilidades & Conquistas:**
-- � **Criação e manutenção de dashboards gerenciais** integrados diretamente ao banco de dados do ERP Sankhya, servindo os setores de Vendas, Estoque, Expedição e Financeiro.
-- � Aplicação de conceitos de **data quality e governança**.
-- 🔄 Liderança analítica em rotinas de **Melhoria Contínua (PDCA/Kaizen)** através do cruzamento inteligente de indicadores.
-- � Extração de dados precisos utilizando SQL (Oracle/PostgreSQL) e desenvolvimento ponta a ponta em Power BI (DAX, Power Query).
-
+**Principais Responsabilidades & Conquistas Sênior:**
+- ⚙️ **Desenvolvimento de SPAs Nativas:** Criação de sistemas web interativos (HTML/JS/Vue) 100% integrados dentro do ERP Sankhya, superando limitações visuais nativas para a diretoria de Finanças e Produção.
+- 🧮 **Lógica Contábil e Industrial em Banco (Oracle):** Construção e otimização de CTEs e SQL Avançado mapeando o cálculo em tempo real de Preço Médio Ponderado (PMP) e Eficiência Fabril (OEE - Overall Equipment Effectiveness).
+- 🔄 **Governança Interativa e Agile:** Liderança do portfólio End-to-End aplicando metodologias Kanban diretas com os diretores de controladoria e fundadores.
+- �� Escalonamento e unificação dos fluxos de caixa, rupturas de fábrica e consumo de matéria-prima (algodão) sob um único teto analítico centralizado.
 ---
 
 ### 🏢 Chefe Administrativo | Assaí Atacadista
@@ -140,21 +157,19 @@ Análises avançadas utilizando Excel para métricas operacionais e financeiras.
 - Fundamentos de Cohort Analysis
 - Análise RFM e Segmentação de Clientes
 
-### 💪 Habilidades Técnicas
+### 💪 Habilidades Técnicas Resumidas
 
-**Linguagens & Ferramentas:**
-- Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn)
-- SQL (PostgreSQL, SQLite)
-- Power BI (DAX, modelagem dimensional)
-- Excel (Power Query, VBA, análises avançadas)
-- Git/GitHub
+**Linguagens & Tecnologias Principais:**
+- Oracle DB / PL/SQL
+- JavaScript, Vue.js, HTML5, CSS3, e bibliotecas de DataViz (Chart.js/ApexCharts)
+- Python (Pandas, Scikit-learn, APIs REST)
+- Power BI (DAX / Modelagem Extrema)
 
-**Análises & Metodologias:**
-- Análise de Cohort
-- Análise RFM (Recência, Frequência, Valor Monetário)
-- Análise de Pareto
-- Métricas AARRR
-- Machine Learning (Classificação, Regressão, Clusterização)
+**Análises & Gestão de Projetos:**
+- Reconstrução Contábil & Fabril (DRE, NCG, OEE, PMP, ROB)
+- Frameworks Ágeis (PDCA, Kanban de Produto, Kaizen corporativo)
+- Dashboards Interativos Injetados (Single Page Applications em ambientes ERP)
+- KPIs Financeiros e Operações em Larga Escala (Varejo Atacadista e Indústria Base)
 
 ---
 
