@@ -725,6 +725,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 /* Estilo dos ícones sociais */
@@ -1181,43 +1182,47 @@ footer {
 /* Responsividade */
 @media screen and (min-width: 981px) {
 
-  /* Container Principal do Header */
+  /* Container Principal do Header - Layout em 2 linhas */
   #header {
     display: flex;
-    flex-direction: row !important;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    flex-direction: column !important;
     align-items: center;
     padding: 1rem 2rem;
     max-width: 100%;
-    gap: 15px;
+    gap: 10px;
+    position: sticky;
+    top: 0;
   }
 
-  /* LINHA 1: Logo */
+  /* LINHA 1: Logo centralizado */
   .logo {
     width: auto;
-    text-align: left;
+    text-align: center;
     margin: 0;
     font-size: 1.5rem;
     order: 1;
     flex-shrink: 0;
   }
 
-  /* Menu de Navegação */
+  /* LINHA 2: Menu de Navegação centralizado abaixo */
   #nav-menu {
     order: 2;
-    flex: 1;
+    flex: none;
     display: flex;
     justify-content: center;
     margin: 0;
+    width: 100%;
   }
 
-  /* Seletor de Idioma */
+  /* Seletor de Idioma - Canto superior direito */
   #language-switcher {
     order: 3;
     margin: 0;
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
   }
 }
 
