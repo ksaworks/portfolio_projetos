@@ -114,8 +114,8 @@ Proyectos enfocados en la inteligencia de clientes y analítica de marketing a p
 - Optimización de bases de datos relacionales y modelado de procesos ETL para mejorar el rendimiento de los reportes gerenciales y reducir la latencia de actualización de los datos.
 
 ### 🏢 Jefe Administrativo y de TI | Assaí Atacadista
-**Febrero/2018 - Mayo/2024** | Itabaiana, SE
-- Trayectoria ascendente de 6 años comenzando como Asistente de TI hasta asumir posiciones de liderazgo y jefatura administrativa de una tienda de autoservicio mayorista.
+**Febrero/2018 - Mayo/2025** | Itabaiana, SE
+- Trayectoria ascendente de 7 años comenzando como Asistente de TI hasta asumir posiciones de liderazgo y jefatura administrativa de una tienda de autoservicio mayorista.
 - Cruce y análisis de bases de datos operacionales y de inventario mediante SQL y Excel para identificar inconsistencias fiscales y controlar el stock.
 - Gestión presupuestaria y financiera (P&L), optimización de flujos operativos de logística y control de activos de TI.
 

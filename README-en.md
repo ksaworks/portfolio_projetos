@@ -114,8 +114,8 @@ Projects focused on customer intelligence and marketing analytics using transact
 - Optimize relational databases and configure ETL processes to improve management report performance and reduce data latency.
 
 ### 🏢 Administrative & IT Manager | Assaí Atacadista
-**February/2018 - May/2024** | Itabaiana, SE
-- Promoted through a 6-year career path starting as an IT Assistant and advancing to administrative leadership of a high-volume wholesale/retail store.
+**February/2018 - May/2025** | Itabaiana, SE
+- Promoted through a 7-year career path starting as an IT Assistant and advancing to administrative leadership of a high-volume wholesale/retail store.
 - Query and analyze inventory and operational databases using SQL and Excel to spot fiscal discrepancies and streamline inventory control.
 - Manage budget and financial reports (P&L), optimize logistics operational flows, and oversee IT physical assets.
 
