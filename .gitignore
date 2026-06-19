@@ -54,3 +54,6 @@ Temp/
 # Arquivos de dependências
 package-lock.json
 yarn.lock
+
+# Arquivo de perfil GitHub local (ignorado)
+Readme_GitHub.md
