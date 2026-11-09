@@ -29,3 +29,12 @@ Arquivos anteriores de blog, estilos e imagens foram mantidos no repositório po
 
 - [GitHub](https://github.com/ksaworks)
 - [LinkedIn](https://www.linkedin.com/in/kelvinandradeworks/)
+
+## Abertura com exemplo Python
+
+A seção inicial inclui um editor ilustrativo com um exemplo pequeno de rota FastAPI.
+A animação mostra o código progressivamente; o botão de repetição reinicia o efeito.
+Ela não executa Python, não acessa APIs e não representa um serviço online.
+
+O exemplo permanece legível sem JavaScript e em dispositivos com preferência por
+movimento reduzido. As três traduções reutilizam o mesmo CSS e JavaScript.

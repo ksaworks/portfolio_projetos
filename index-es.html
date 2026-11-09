@@ -19,8 +19,8 @@
   <link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/index-es.html">
   <link rel="alternate" hreflang="x-default" href="https://ksaworks.github.io/portfolio_projetos/index.html">
   <link rel="icon" href="assets/ka-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/portfolio-2026.css">
-  <script defer src="assets/js/portfolio-2026.js"></script>
+  <link rel="stylesheet" href="assets/css/portfolio-2026.css?v=2">
+  <script defer src="assets/js/portfolio-2026.js?v=2"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kelvin Santos Andrade","url":"https://ksaworks.github.io/portfolio_projetos/","jobTitle":"Desenvolvimento backend em Python","sameAs":["https://github.com/ksaworks","https://www.linkedin.com/in/kelvinandradeworks/"]}</script>
 </head>
 <body>
@@ -47,10 +47,16 @@
             <a class="btn btn-secondary" href="https://github.com/ksaworks" target="_blank" rel="noopener noreferrer">Mi GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <aside class="hero-board" aria-label="CÓMO SE CONECTAN LAS PARTES">
-          <div class="board-head"><span class="board-title">CÓMO SE CONECTAN LAS PARTES</span><span class="board-number">/ 01</span></div>
-          <div class="flow-stack"><div class="flow-node"><div><span>FRONTEND</span><strong>Interfaz</strong></div><small>React · Next.js</small></div><div class="flow-connector" aria-hidden="true"></div><div class="flow-node"><div><span>BACKEND</span><strong>Lógica y APIs</strong></div><small>Python · FastAPI</small></div><div class="flow-connector" aria-hidden="true"></div><div class="flow-node"><div><span>DATOS</span><strong>Persistencia</strong></div><small>PostgreSQL · SQLAlchemy</small></div></div>
-          <div class="board-footer"><span><i aria-hidden="true"></i>ARQUITECTURA DE APLICACIÓN</span><span>FRONTEND → API → BASE DE DATOS</span></div>
+        <aside class="code-window" aria-label="Demostración visual de código Python con FastAPI" data-code-demo>
+          <div class="code-topbar">
+            <div class="code-window-label"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="code-file"><span class="python-mark" aria-hidden="true">py</span> routes.py</span></div>
+            <button class="code-replay" type="button" data-code-replay aria-label="Repetir animación" title="Repetir animación"><span aria-hidden="true">↻</span> <span>Repetir animación</span></button>
+          </div>
+          <div class="code-caption"><span class="code-indicator" aria-hidden="true"></span>EJEMPLO DE CÓDIGO<span class="code-caption-note">/ FastAPI</span></div>
+          <div class="code-editor">
+            <pre aria-hidden="true" class="code-block"><code><span class="code-row"><span class="code-ln" aria-hidden="true">01</span><span class="code-source"><span class="tok-keyword">from</span> fastapi <span class="tok-keyword">import</span> <span class="tok-class">APIRouter</span></span></span><span class="code-row"><span class="code-ln" aria-hidden="true">02</span><span class="code-source">&#160;</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">03</span><span class="code-source">api = <span class="tok-class">APIRouter</span>()</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">04</span><span class="code-source">&#160;</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">05</span><span class="code-source">@api.<span class="tok-method">get</span>(<span class="tok-string">&quot;/projects&quot;</span>)</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">06</span><span class="code-source"><span class="tok-keyword">def</span> <span class="tok-func">projects</span>():</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">07</span><span class="code-source">    <span class="tok-keyword">return</span> {</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">08</span><span class="code-source">        <span class="tok-string">&quot;backend&quot;</span>: <span class="tok-string">&quot;FastAPI&quot;</span>,</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">09</span><span class="code-source">        <span class="tok-string">&quot;database&quot;</span>: <span class="tok-string">&quot;PostgreSQL&quot;</span>,</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">10</span><span class="code-source">        <span class="tok-string">&quot;tests&quot;</span>: <span class="tok-string">&quot;pytest&quot;</span>,</span></span><span class="code-row"><span class="code-ln" aria-hidden="true">11</span><span class="code-source">    }</span></span></code></pre>
+          </div>
+          <div class="code-footer"><span>Ejemplo de endpoint sin ejecución en el navegador</span><span>PYTHON · FASTAPI</span></div>
         </aside>
       </div>
     </section>
