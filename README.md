@@ -1,26 +1,31 @@
-# Portfólio de projetos — Kelvin Andrade
+# Portfólio — Kelvin Andrade
 
-Este repositório reúne meu portfólio de projetos em análise de dados, automação e desenvolvimento web. Sou formado em Análise e Desenvolvimento de Sistemas e, além da experiência com dados e processos de negócio, desenvolvo aplicações backend em Python.
+Portfólio pessoal com foco em desenvolvimento backend em Python, APIs e integração de sistemas.
 
-O site publicado aqui foi construído principalmente para apresentar trabalhos de Business Intelligence. Uma descrição mais atual da minha atuação em desenvolvimento de software está no [meu perfil do GitHub](https://github.com/ksaworks).
+**Site:** https://ksaworks.github.io/portfolio_projetos/
 
-## Desenvolvimento de software
+O conteúdo apresenta minha formação em Análise e Desenvolvimento de Sistemas, experiência profissional e projetos próprios, comerciais e públicos. Sistemas internos e produtos comerciais são descritos sem publicar código ou informações confidenciais.
 
-Trabalho com Python, FastAPI, SQLAlchemy e PostgreSQL na construção de APIs e aplicações web. Também utilizo Git, Docker e Linux no desenvolvimento e na implantação de projetos, além de React e Next.js para interfaces.
+## Tecnologias do site
 
-Entre meus trabalhos está o **Sabor que Rende**, uma plataforma SaaS para gestão de negócios de confeitaria, com backend em FastAPI e banco PostgreSQL. O código desse produto é privado. Outras aplicações internas em que atuo também não estão disponíveis publicamente por envolverem processos e informações de empresas.
+- HTML sem framework
+- CSS responsivo
+- JavaScript para navegação em telas menores
+- GitHub Pages para publicação
 
-## Projetos públicos
+As páginas estão disponíveis em [português](index.html), [inglês](index-en.html) e [espanhol](index-es.html), utilizando a mesma folha de estilos e o mesmo script de navegação.
 
-- [Dashboard de almoxarifado](https://github.com/ksaworks/dashboard-almoxarifado): aplicação Python/Streamlit para análise de consumo de materiais e previsão de demanda.
-- [Simulação de dados jurídicos](https://github.com/ksaworks/simulacao-dados-juridicos): scripts Python para criação de bases sintéticas destinadas a testes e análises.
-- [Análise de cohort — SuperStore](https://github.com/ksaworks/analise-cohort-superstore): análise de retenção de clientes com dados de transações.
-- [Segmentação RFM](https://github.com/ksaworks/rfm-segmentacao): estudo de comportamento de clientes a partir de recência, frequência e valor.
+## Estrutura principal
 
-Os repositórios públicos mostram principalmente meus trabalhos de análise de dados. A experiência em backend Python está concentrada em aplicações privadas.
+- `index.html` — versão em português
+- `index-en.html` — versão em inglês
+- `index-es.html` — versão em espanhol
+- `assets/css/portfolio-2026.css` — estilos atuais
+- `assets/js/portfolio-2026.js` — menu responsivo
 
-## Formação e contato
+Arquivos anteriores de blog, estilos e imagens foram mantidos no repositório por compatibilidade e histórico.
 
-- Tecnólogo em Análise e Desenvolvimento de Sistemas — Estácio (2023).
-- [Perfil do GitHub](https://github.com/ksaworks)
+## Contato
+
+- [GitHub](https://github.com/ksaworks)
 - [LinkedIn](https://www.linkedin.com/in/kelvinandradeworks/)

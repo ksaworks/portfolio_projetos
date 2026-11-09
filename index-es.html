@@ -1,523 +1,101 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <title>Kelvin Andrade | Analista de Datos & BI Developer</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-  <!-- SEO Meta Tags -->
-  <meta name="description"
-    content="Portafolio de Kelvin Andrade - Analista de Datos & BI Developer. Especialista en Power BI, SQL Avanzado, Python para datos y Power Platform con enfoque en resultados operativos.">
-  <meta name="keywords"
-    content="analista de datos, business intelligence, bi developer, power bi, dax, sql avanzado, python para datos, power platform, dashboards ejecutivos, erp sankhya, oracle sql">
-  <meta name="author" content="Kelvin Andrade">
-
-  <!-- Open Graph / Facebook -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1116">
+  <meta name="description" content="Portafolio de Kelvin Andrade. Desarrollo backend con Python, FastAPI, PostgreSQL, APIs, integraciones y aplicaciones web.">
+  <meta name="author" content="Kelvin Santos Andrade">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="Kelvin Andrade | Desarrollo Backend con Python">
+  <meta property="og:description" content="Portafolio de Kelvin Andrade. Desarrollo backend con Python, FastAPI, PostgreSQL, APIs, integraciones y aplicaciones web.">
   <meta property="og:url" content="https://ksaworks.github.io/portfolio_projetos/index-es.html">
-  <meta property="og:title" content="Kelvin Andrade | Analista de Datos & BI Developer">
-  <meta property="og:description"
-    content="Portafolio de Kelvin Andrade - Analista de Datos & BI Developer. Dashboards ejecutivos de alto impacto, SQL avanzado, Python y Power Platform para soporte a la toma de decisiones.">
-  <meta property="og:image" content="https://ksaworks.github.io/portfolio_projetos/images/pic10.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://ksaworks.github.io/portfolio_projetos/index-es.html">
-  <meta property="twitter:title" content="Kelvin Andrade | Analista de Datos & BI Developer">
-  <meta property="twitter:description"
-    content="Portafolio de Kelvin Andrade - Analista de Datos & BI Developer. Dashboards ejecutivos de alto impacto, SQL avanzado, Python y Power Platform para soporte a la toma de decisiones.">
-  <meta property="twitter:image" content="https://ksaworks.github.io/portfolio_projetos/images/pic10.png">
-
-  <!-- Canonical & hreflang -->
-  <link rel="canonical" href="https://ksaworks.github.io/portfolio_projetos/index-es.html" />
-  <link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/index.html" />
-  <link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/index-en.html" />
-  <link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/index-es.html" />
-  <link rel="alternate" hreflang="x-default" href="https://ksaworks.github.io/portfolio_projetos/index.html" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/futuristic.css" />
-
-  <!-- Detecção automática de idioma -->
-  <script src="assets/js/language-detection.js"></script>
-  <script src="assets/js/futuristic.js"></script>
+  <meta name="twitter:card" content="summary">
+  <title>Kelvin Andrade | Desarrollo Backend con Python</title>
+  <link rel="canonical" href="https://ksaworks.github.io/portfolio_projetos/index-es.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/index.html">
+  <link rel="alternate" hreflang="en" href="https://ksaworks.github.io/portfolio_projetos/index-en.html">
+  <link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/index-es.html">
+  <link rel="alternate" hreflang="x-default" href="https://ksaworks.github.io/portfolio_projetos/index.html">
+  <link rel="icon" href="assets/ka-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/portfolio-2026.css">
+  <script defer src="assets/js/portfolio-2026.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Kelvin Santos Andrade","url":"https://ksaworks.github.io/portfolio_projetos/","jobTitle":"Desenvolvimento backend em Python","sameAs":["https://github.com/ksaworks","https://www.linkedin.com/in/kelvinandradeworks/"]}</script>
 </head>
-
-<body class="is-preload">
-  <div id="wrapper">
-    <div id="main">
-      <div class="inner">
-        <header id="header">
-          <a href="index-es.html" class="logo">Portafolio de <strong>Business Intelligence & Análisis de Datos</strong></a>
-
-          <!-- Menú de Navegación -->
-          <button class="menu-toggle" aria-label="Abrir Menú">
-            <i class="fas fa-bars"></i>
-          </button>
-          <nav id="nav-menu">
-            <ul>
-              <li><a href="#sobre">Sobre Mí</a></li>
-              <li><a href="#habilidades">Habilidades</a></li>
-              <li><a href="#experiencias">Experiencia</a></li>
-              <li><a href="#proyectos">Proyectos</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#contacto">Contacto</a></li>
-            </ul>
-          </nav>
-
-
-          <div id="language-switcher">
-            <a href="index.html" class="flag" onclick="event.preventDefault(); changeLanguage('pt-br');"
-              aria-label="Portugués">
-              <img src="images/br.png" alt="Portugués">
-            </a>
-            <span class="separator">|</span>
-            <a href="index-en.html" class="flag" onclick="event.preventDefault(); changeLanguage('es');"
-              aria-label="Inglés">
-              <img src="images/us.png" alt="Inglés">
-            </a>
-            <span class="separator">|</span>
-            <a href="index-es.html" class="flag" onclick="event.preventDefault(); changeLanguage('es');"
-              aria-label="Español">
-              <img src="images/es.png" alt="Español">
-            </a>
-          </div>
-        </header>
-
-        <section id="banner">
-          <div class="content">
-            <header>
-              <h1>Hola, bienvenido(a) a mi portafolio de Business Intelligence y Análisis de Datos</h1>
-            </header>
-            <p>Transformo datos, procesos y reglas de negocio complejas en indicadores estratégicos, 
-              dashboards ejecutivos y automatizaciones operativas. Mi stack central está compuesto por 
-              <strong>Power BI avanzado, SQL avanzado, Python para análisis de datos y Power Platform</strong>, 
-              apoyando directamente a la toma de decisiones gerenciales y directivas.<br />
-              Aquí encontrará casos de estudio enfocados en el retorno de inversión (ROI), paneles executivos y automatizaciones que simplifican las rutinas operativas.
-            </p>
-            <p>Siéntete libre de explorar y contactarme a través de los enlaces al final de la página.</p>
-          </div>
-        </section>            <section id="sobre" class="sobre-section">
-          <header class="main">
-            <h1>Sobre Mí</h1>
-          </header>
-          <div class="sobre-content">
-            <p class="intro">
-              Mi nombre es <strong>Kelvin Santos Andrade</strong>
-            </p>
-
-            <p class="resumo">
-              Soy un <strong>Analista de Datos & BI Developer</strong> con más de 7 años de experiencia en gestión de negocios en el sector comercial y minorista, lo que me proporcionó una visión analítica sobre operaciones, finanzas y procesos de negocio. Traduzco la complejidad operativa de la industria y el comercio en reportes ejecutivos eficientes, basando decisiones en datos concretos.
-            </p>
-
-            <div class="destaque-principal">
-              <h3>Mi Rol</h3>
-              <p>
-                Actúo como un <strong>traductor de negocios a datos</strong>. Soy responsable de todo el pipeline analítico: desde la ingeniería de requisitos con stakeholders y diseño de reglas de cálculo (KPIs), hasta el modelado dimensional de datos, desarrollo de procesos de ETL rápidos y creación de dashboards premium con alto poder de storytelling.
-              </p>
-            </div>
-
-            <div class="ferramentas-resumo">
-              <h3>Stack Tecnológico</h3>
-              <ul class="tech-list">
-                <li><strong>BI & Visualización:</strong> Power BI, DAX, Power Query, Excel avanzado, Streamlit, Storytelling</li>
-                <li><strong>SQL, ETL & Modelagem:</strong> SQL avanzado, Oracle SQL, SQL Server, PostgreSQL, modelagem analítica fato/dimensão, qualidade de dados</li>
-                <li><strong>Python & Automatización:</strong> Python, Pandas, NumPy, Scikit-learn, Jupyter Notebook, Power Automate, Power Apps</li>
-                <li><strong>Dominio de Negocio:</strong> ERP Sankhya, venta al por menor, industria, financiero, logística, inventario, ventas y operaciones</li>
-              </ul>
-            </div>
-
-            <p class="chamada-acao">
-              💡 <em>Mi objetivo es transformar datos dispersos y complejos en inteligencia corporativa estructurada, generando eficiencia y un retorno real sobre las inversiones.</em>
-            </p>
-          </div>
-        </section>            <section id="habilidades">
-          <header class="major">
-            <h1>Habilidades Técnicas</h1>
-          </header>
-          <div class="features">
-            <article>
-              <div class="content">
-                <h3>BI & Visualización de Dados</h3>
-                <ul>
-                  <li><strong>Power BI & DAX:</strong> Creación de paineles dinámicos con modelado de datos, medidas complejas y optimización de rendimiento de renderizado.</li>
-                  <li><strong>Power Query:</strong> Procesos de extracción, transformación y carga (ETL) robustos directamente en los flujos de Power BI.</li>
-                  <li><strong>Excel & Streamlit:</strong> Informes estructurados en hojas de cálculo con VBA y desarrollo de interfaces interativas rápidas en Python.</li>
-                </ul>
-              </div>
-            </article>
-            <article>
-              <div class="content">
-                <h3>SQL, ETL & Modelado</h3>
-                <ul>
-                  <li><strong>SQL Avanzado:</strong> Dominio absoluto en consultas complejas, CTEs, Window Functions y stored procedures en Oracle SQL, PostgreSQL y SQL Server.</li>
-                  <li><strong>Modelado Analítico:</strong> Estructuración de bases de datos relacionales y dimensionales (tablas hecho/dimensión) optimizadas para reportes.</li>
-                  <li><strong>Calidad de Datos:</strong> Validación de integridad y auditoría de bases para garantizar la consistencia de las reglas de negocio.</li>
-                </ul>
-              </div>
-            </article>
-            <article>
-              <div class="content">
-                <h3>Python para Datos</h3>
-                <ul>
-                  <li><strong>Pandas & NumPy:</strong> Manipulación, tratamiento avanzado y limpieza de grandes volúmenes de datos de fuentes diversas.</li>
-                  <li><strong>Análisis Exploratorio (EDA):</strong> Investigación estadística descriptiva y detección de anomalías operacionales.</li>
-                  <li><strong>Modelos Predictivos:</strong> Machine learning aplicado a previsiones de demanda y consumo con scikit-learn.</li>
-                </ul>
-              </div>
-            </article>
-            <article>
-              <div class="content">
-                <h3>Power Platform & Automatización</h3>
-                <ul>
-                  <li><strong>Power Automate:</strong> Automatización de envío de reportes, flujos de aprobación de datos y alertas operativas.</li>
-                  <li><strong>Power Apps:</strong> Desarrollo de micro-aplicaciones para la recolección de datos controlada en almacenes y tiendas.</li>
-                  <li><strong>Integración Completa:</strong> Conexión nativa entre ERP Sankhya, base Oracle y Power Platform para agilizar la toma de decisiones.</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </section>   </div>
-            </article>
-        </section>
-
-        <section id="experiencias">
-          <header class="main">
-            <h1>Experiencia Profesional</h1>
-          </header>
-          <h2>Analista de Datos / BI Developer - Fiação Itabaiana</h2>
-          <p><strong>Agosto 2025 - Actual · Ribeirópolis, Sergipe, Brasil</strong></p>
-          <p>
-            Liderazgo en el desarrollo de informes analíticos, dashboards y automatizaciones para soporte a la toma de decisiones ejecutivas en las áreas comercial, suministros, expedición, finanzas y contraloría.
-          </p>
-          <h3>Principales Responsabilidades y Resultados</h3>
-          <ul>
-            <li>Modelado analítico y optimización de consultas complejas en Oracle 19c (CTEs, Window Functions, PL/SQL) para la generación de paneles estratégicos y auditoría de procesos.</li>
-            <li>Desarrollo de dashboards ejecutivos de alto rendimiento en Power BI con reglas de cálculo DAX optimizadas para el monitoreo de facturación, inventario y eficiencia industrial.</li>
-            <li>Automatización de flujos de ETL y envío de indicadores con Python, Power Automate y Power Apps integrados al ERP Sankhya.</li>
-            <li>Mapeo y levantamiento de requisitos de datos con gerentes y directores para diseñar nuevas métricas de desempeño e informes.</li>
-          </ul>
-          <h3>Competencias Técnicas</h3>
-          <p><strong>Power BI, DAX, Power Query, Oracle SQL, PL/SQL, Power Platform, Python, ETL, Modelado Analítico, ERP Sankhya.</strong></p>
-
-          <h2>Analista de Datos & Power BI Freelancer</h2>
-          <p><strong>Mayo 2025 - Actual</strong></p>
-          <p>
-            Consultoría independiente enfocada en la transformación analítica de negocios, modelado dimensional e implantación de Business Intelligence.
-          </p>
-          <h3>Principales Proyectos y Resultados</h3>
-          <ul>
-            <li>Desarrollo de dashboards personalizados en Power BI integrando fuentes de datos heterogéneas (APIs, PostgreSQL, Excel y archivos CSV).</li>
-            <li>Estructuración y modelado dimensional hecho/dimensión para garantizar el rendimiento y la organización de los paneles analíticos.</li>
-            <li>Conversión de hojas de cálculo operacionales complejas (como seguimiento de metas, matrices GUT y OKRs) en flujos de BI limpos e informes dinámicos.</li>
-          </ul>
-          <h3>Competencias Técnicas</h3>
-          <p><strong>Power BI, DAX, Power Query, Modelado Dimensional, SQL, Python (Pandas/Streamlit), ETL, Excel Avanzado.</strong></p>
-
-          <h2>Assaí Atacadista — Visión de Negocios y Gestión (7+ años)</h2>
-          <p><strong>Múltiples cargos de liderazgo · Sergipe, Brasil</strong></p>
-          <p>
-            Más de 7 años de trayectoria en posiciones de liderazgo en retail mayorista, desarrollando una visión de C-level sobre operaciones, finanzas y procesos comerciales. Esta experiencia es la base de mi capacidad para traducir reglas de negocio en datos e inteligencia de mercado.
-          </p>
-
-          <h3>Más de 3 Años como Jefe Administrativo</h3>
-          <ul>
-            <li>Reducción del 30% en gastos operativos con reorganización logística y control de flota</li>
-            <li>Ahorro mensual de R$ 10.000 con optimización de cámaras frigoríficas y energía</li>
-            <li>Mejora del 15% en precisión de inventarios cruzando SQL y Excel</li>
-            <li>Organización de procesos ETL manuales y automatización de informes gerenciales</li>
-          </ul>
-
-          <h3>1 Año como Jefe de Recepción</h3>
-          <ul>
-            <li>Reducción del 25% en tiempo promedio de recepción con mejora de flujo operacional</li>
-            <li>Mejora del 18% en precisión fiscal con verificación cruzada</li>
-            <li>Reducción del 40% en errores operativos con rutina de entrenamiento</li>
-          </ul>
-
-          <h3>Más de 4 Años como Asistente de TI</h3>
-          <ul>
-            <li>Reducción del 35% en incidencias repetidas con procesos estandarizados</li>
-            <li>Reducción del 22% en tiempo medio de resolución con scripts y checklists</li>
-            <li>Disponibilidad de PDVs en 98% con mantenimiento preventivo</li>
-            <li>Soporte a más de 150 usuarios y 26+ PDVs simultáneos</li>
-          </ul>
-        </section>
-
-        <!-- Section -->
-        <section id="proyectos">
-          <header class="major">
-            <h1>Casos de Estudio & Proyectos Destacados</h1>
-            <p class="subtitulo">Casos de datos, Business Intelligence y modelos predictivos enfocados en el impacto del negocio</p>
-          </header>
-          <div class="posts">
-
-            <article>
-              <a href="https://github.com/ksaworks/dashboard-almoxarifado" class="image" target="_blank">
-                <img src="images/dashboard-almoxarifado.png" alt="Dashboard de Análisis de Almacén con Machine Learning"
-                  loading="lazy" />
-              </a>
-              <h3>Dashboard de Almacén con Machine Learning</h3>
-              <p>
-                Sistema inteligente desarrollado para análisis predictivo y gestión estratégica de almacenes
-                industriales.
-                Utiliza técnicas avanzadas de <strong>Machine Learning</strong> para predecir demandas, detectar
-                anomalías
-                y optimizar procesos de mantenimiento. El dashboard ofrece interfaz interactiva con
-                <strong>Streamlit</strong>, soportando archivos Excel y CSV.
-              </p>
-              <ul>
-                <li><strong>Herramientas:</strong> Python, Streamlit, Scikit-learn, Prophet, Plotly, Pandas</li>
-                <li><strong>Modelos ML:</strong> Regresión Lineal, Random Forest, Gradient Boosting, Prophet (Meta)</li>
-                <li><strong>Funcionalidades:</strong> Previsiones 3-12 meses, detección de anomalías, análisis de
-                  criticidade, control financeiro</li>
-                <li><strong>Destaque:</strong> Patch para NumPy 2.0+, validación de datos, gráficos ordenados cronológicamente</li>
-              </ul>
-              <ul class="actions">
-                <li>
-                  <a href="https://github.com/ksaworks/dashboard-almoxarifado" class="button" target="_blank"
-                    rel="noopener noreferrer">
-                    Ver Proyecto Completo
-                  </a>
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <a href="https://github.com/ksaworks/dataluz-plataforma-saas" class="image" target="_blank">
-                <img src="images/dataluz.png" alt="Interfaz de la plataforma DataLuz SaaS" loading="lazy" />
-              </a>
-              <h3>DataLuz – Plataforma SaaS para E-commerce</h3>
-              <p>Desarrollé una solución digital ficticia para pequeños y medianos e-commerce que enfrentan dificultades
-                con el análisis de datos. <strong>DataLuz</strong> ofrece dashboards intuitivos, alertas automáticas vía
-                WhatsApp e informes personalizados. El proyecto forma parte del curso de la Comunidad DS e incluye la
-                creación completa de un modelo de negocio digital con estrategias AARRR.</p>
-              <ul>
-                <li><strong>Herramientas:</strong> Estrategia de Producto, Métricas AARRR, Viaje del Cliente</li>
-                <li><strong>Problema:</strong> Falta de tiempo y conocimiento técnico para Business Intelligence</li>
-                <li><strong>Solución:</strong> Integración vía API, informes automatizados y visualización simplificada
-                </li>
-                <li><strong>Destaque:</strong> Envío de insights directamente al WhatsApp del emprendedor</li>
-              </ul>
-              <ul class="actions">
-                <li><a href="https://github.com/ksaworks/dataluz-plataforma-saas" class="button" target="_blank">Ver
-                    Proyecto</a></li>
-              </ul>
-            </article>
-
-            <article>
-              <a href="https://github.com/ksaworks/simulacao-dados-juridicos" class="image" target="_blank">
-                <img src="images/legal_data_banner.png" alt="Banner de simulación de datos jurídicos" loading="lazy" />
-              </a>
-              <h3>Simulación Jurídica con Datos Sintéticos</h3>
-              <p>Desarrollé un generador de datos jurídicos sintéticos y realistas, creando un dataset completo con
-                2.000 procesos, partes involucradas y movimientos procesales. Esta solución es ideal para demostrar
-                habilidades en análisis de datos, BI y modelado predictivo en un escenario que simula el mundo legal
-                real.</p>
-              <ul>
-                <li><strong>Herramientas:</strong> Python, Pandas, Faker</li>
-                <li><strong>Problema:</strong> Dificultad para acceder a datos jurídicos detallados debido a la
-                  confidencialidad</li>
-                <li><strong>Solución:</strong> Script que genera un dataset robusto y verosímil en formato .csv, listo
-                  para usar en Power BI, Excel o Python</li>
-                <li><strong>Destaque:</strong> Capacidad de simular un entorno complejo, con valores de causa,
-                  provisiones de riesgo, fases procesales y abogados responsables</li>
-              </ul>
-              <ul class="actions">
-                <li><a href="https://github.com/ksaworks/simulacao-dados-juridicos" class="button" target="_blank">Ver
-                    Proyecto</a></li>
-              </ul>
-            </article>
-
-            <article>
-              <a href="https://github.com/ksaworks/analise-cohort-superstore" class="image" target="_blank">
-                <img src="images/heatmap-cohort.png" alt="Heatmap Cohort SuperStore" />
-              </a>
-              <div class="content">
-                <h3>Análisis Cohorte – SuperStore</h3>
-                <p>Utilizando Excel, desarrolló un análisis de retención de clientes (Cohort Analysis) con datos reales
-                  de una cadena nacional de supermercados. A partir de la limpieza y estructuración de datos,
-                  identifiqué los mejores grupos de adquisición y patrones de comportamiento, generando insights
-                  estratégicos para retención y ventas.</p>
-                <ul>
-                  <li><strong>Herramientas:</strong> Excel, BUSCARV, Tablas Dinámicas, Formato Condicional</li>
-                  <li><strong>Resultado:</strong> La cohorte de mayo/2014 tuvo la mejor retención después de 6 meses
-                    (11%)</li>
-                  <li><strong>Insight clave:</strong> Las campañas promocionales impactan positivamente en la recompra
-                  </li>
-                </ul>
-                <ul class="actions">
-                  <li><a href="https://github.com/ksaworks/analise-cohort-superstore" class="button" target="_blank">Ver
-                      Proyecto</a></li>
-                </ul>
-              </div>
-            </article>
-
-            <article>
-              <a href="https://github.com/ksaworks/rfm-segmentacao" class="image" target="_blank">
-                <img src="images/rfm-treemap.png" alt="Treemap Análisis RFM" />
-              </a>
-              <h3>Análisis RFM – Segmentación de Clientes</h3>
-              <p>Clasifiqué a los clientes según su comportamiento de compra utilizando la técnica <strong>RFM
-                  (Recencia, Frecuencia y Valor Monetario)</strong>. Este análisis permite segmentar la base de clientes
-                para crear campañas personalizadas y maximizar el retorno de inversión en marketing.</p>
-              <ul>
-                <li><strong>Herramientas:</strong> Excel (ÍNDICE, COINCIDIR, SUMAR.SI, PERCENTIL)</li>
-                <li><strong>Segmentos creados:</strong> Campeones, Leales, Prometedores, Perdidos y más</li>
-                <li><strong>Resultados:</strong> 40% de los clientes son potencialmente leales; solo 1% está en "No
-                  Perder"</li>
-              </ul>
-              <ul class="actions">
-                <li><a href="https://github.com/ksaworks/rfm-segmentacao" class="button" target="_blank">Ver
-                    Proyecto</a></li>
-              </ul>
-            </article>
-
-          </div>
-
-          <header class="major" style="margin-top: 3em;">
-            <h2>🧩 Proyectos Complementarios en Sistemas y Gobernanza</h2>
-            <p class="subtitulo">Proyectos que demuestran mi capacidad para estructurar soluciones completas, integrar datos, modelar bases de datos relacionales y apoyar la gestión corporativa</p>
-          </header>
-          <div class="posts">
-            <!-- Case 1 - Integraciones y Sustentación ERP -->
-            <article>
-              <a href="#" class="image"><img src="images/projeto-financeiro.png"
-                  alt="Integraciones y Sustentación de ERP Corporativo" loading="lazy" /></a>
-              <h3>Integraciones y Gobernanza de ERP Corporativo (Fiação Itabaiana)</h3>
-              <p>
-                Sustentación técnica del ERP Sankhya en ambiente industrial, incluyendo customizaciones
-                en Java en el core del sistema, modelado de banco en Oracle 19c e integración de datos fiscales, financieros y operacionales.
-              </p>
-              <ul class="actions">
-                <li><span class="button disabled">Proyecto Interno Privado</span></li>
-              </ul>
-            </article>
-
-            <!-- Case 2 - SaaS Strategic Premium -->
-            <article>
-              <a href="#" class="image"><img src="images/projeto-industrial.png" alt="Plataforma SaaS Strategic Premium"
-                  loading="lazy" /></a>
-              <h3>Plataforma SaaS: Strategic Premium</h3>
-              <p>
-                Producto web construido en PHP/Laravel 11 con FilamentPHP para la gestión de OKRs corporativos.
-                Cuenta con arquitectura multi-tenant con aislamiento de base de datos y auditoría de gobernanza de datos.
-              </p>
-              <ul class="actions">
-                <li><span class="button disabled">Producto en Desarrollo</span></li>
-              </ul>
-            </article>
-
-            <!-- Case 3 - Modernização de Legado -->
-            <article>
-              <a href="#" class="image"><img src="images/projeto-estoque.png"
-                  alt="Modernización de Legado Strategic Enterprise" loading="lazy" /></a>
-              <h3>Modernización de Legado: Strategic Enterprise</h3>
-              <p>
-                Ingeniería de requisitos completa y refactorización de sistema de gestión estratégica.
-                Reestructuración de tablas relacionales, auditoría de logs (Spatie Activitylog) y control de permisos.
-              </p>
-              <ul class="actions">
-                <li><span class="button disabled">Proyecto Interno Privado</span></li>
-              </ul>
-            </article>
-          </div>
-        </section>
-        
-        <!-- Blog -->
-        <section id="blog">
-          <header class="main">
-            <h1>📝 Blog</h1>
-          </header>
-
-          <h2>Perspectivas sobre Business Intelligence & Análisis de Datos</h2>
-          <p>
-            Comparto casos prácticos, tendencias y aprendizajes sobre Business Intelligence, análisis de datos, dashboards interativos, SQL avanzado y automatizaciones de procesos. Revisa el artículo más reciente:
-          </p>
-
-          <!-- Artículo Destacado -->
-          <div class="box">
-            <h3>📊 Dashboard de Almacén con Machine Learning: Un Caso de Éxito</h3>
-            <p>
-              <span style="color: rgba(255, 255, 255, 0.6);"><i class="far fa-calendar"></i> 17 de Octubre, 2025 |
-                <i class="far fa-clock"></i> 15 min de lectura</span>
-            </p>
-            <p>
-              Cómo transformé un problema de gestión de inventario en una solución inteligente usando Power BI,
-              Python y Machine Learning. Descubre los desafíos, soluciones técnicas y resultados medibles
-              de este proyecto en la industria textil.
-            </p>
-            <p>
-              <strong>Temas principales:</strong> Predicción de Demanda, Detección de Anomalías,
-              Optimización de Inventario, ROI del 320%
-            </p>
-            <ul class="actions">
-              <li><a href="blog/posts/dashboard-almoxarifado-case-study-es.html" class="button primary">Leer Artículo
-                  Completo</a></li>
-              <li><a href="blog/blog-es.html" class="button">Ver Todos os Artigos</a></li>
-            </ul>
-          </div>
-
-          <!-- Categorías del Blog -->
-          <div class="row">
-            <div class="col-4 col-12-medium">
-              <h3>🎯 Casos de Estudio</h3>
-              <p>Proyectos reales con resultados analíticos medibles</p>
-            </div>
-            <div class="col-4 col-12-medium">
-              <h3>📊 Business Intelligence</h3>
-              <p>Visualización de datos, Power BI, DAX y storytelling con datos</p>
-            </div>
-            <div class="col-4 col-12-medium">
-              <h3>🗄️ SQL & Automatización</h3>
-              <p>Modelado hecho/dimensión, consultas complejas y Power Platform</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="contacto">
-          <header class="main">
-            <h1>Contacto</h1>
-          </header>
-          <h2>Estoy disponible para conversar</h2>
-          <ul class="contact-links">
-            <li>
-              <i class="fab fa-linkedin"></i>
-              <strong> LinkedIn: </strong>
-              <a href="https://www.linkedin.com/in/kelvinandradeworks/"
-                target="_blank">linkedin.com/in/kelvinandradeworks</a>
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <strong> E-mail: </strong>
-              <a href="mailto:kelvinstaandrade@gmail.com">kelvinstaandrade@gmail.com</a>
-            </li>
-            <li>
-              <i class="fab fa-github"></i>
-              <strong> GitHub: </strong>
-              <a href="https://github.com/ksaworks" target="_blank">github.com/ksaworks</a>
-            </li>
-          </ul>
-        </section>
-
-        <footer id="footer">
-          <p class="copyright">
-            &copy; 2026 Kelvin Andrade. Todos los derechos reservados.
-            Portafolio de Business Intelligence & Análisis de Datos desarrollado por Kelvin Andrade. Diseño basado
-            en plantilla de
-            <a href="https://html5up.net" target="_blank">HTML5 UP</a>. Imágenes de
-            <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-          </p>
-        </footer>
+<body>
+  <a class="skip" href="#conteudo">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Kelvin Andrade"><span class="brand-symbol" aria-hidden="true">K/</span><span>Kelvin Andrade</span></a>
+      <nav class="nav" id="primary-nav" aria-label="Abrir navegación" data-open="false"><a href="#sobre">Sobre mí</a><a href="#competencias">Habilidades</a><a href="#projetos">Proyectos</a><a href="#trajetoria">Experiencia</a><a href="#contato">Contacto</a></nav>
+      <div class="header-end">
+        <div class="lang-switch" aria-label="Language / Idioma"><a href="index.html" lang="pt-BR" >PT</a><a href="index-en.html" lang="en" >EN</a><a href="index-es.html" lang="es" aria-current="page">ES</a></div>
+        <button class="nav-toggle" type="button" aria-label="Abrir navegación" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
-  </div>
-
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">DESARROLLO DE SOFTWARE / SERGIPE, BRASIL</div>
+          <h1 id="hero-title">Desarrollo APIs <em>pensando en quienes las utilizan.</em></h1>
+          <p class="lead">Trabajo con Python, bases de datos y aplicaciones web. Me interesa conocer la operación antes de convertir sus reglas en software.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projetos">Explorar proyectos <span aria-hidden="true">↓</span></a>
+            <a class="btn btn-secondary" href="https://github.com/ksaworks" target="_blank" rel="noopener noreferrer">Mi GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <aside class="hero-board" aria-label="CÓMO SE CONECTAN LAS PARTES">
+          <div class="board-head"><span class="board-title">CÓMO SE CONECTAN LAS PARTES</span><span class="board-number">/ 01</span></div>
+          <div class="flow-stack"><div class="flow-node"><div><span>FRONTEND</span><strong>Interfaz</strong></div><small>React · Next.js</small></div><div class="flow-connector" aria-hidden="true"></div><div class="flow-node"><div><span>BACKEND</span><strong>Lógica y APIs</strong></div><small>Python · FastAPI</small></div><div class="flow-connector" aria-hidden="true"></div><div class="flow-node"><div><span>DATOS</span><strong>Persistencia</strong></div><small>PostgreSQL · SQLAlchemy</small></div></div>
+          <div class="board-footer"><span><i aria-hidden="true"></i>ARQUITECTURA DE APLICACIÓN</span><span>FRONTEND → API → BASE DE DATOS</span></div>
+        </aside>
+      </div>
+    </section>
+    <div class="technology-band"><div class="container technology-inner">
+      <span class="micro">TECNOLOGÍAS /</span>
+      <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Pytest</span><span>Docker</span><span>React</span>
+    </div></div>
+    <section class="section" id="sobre" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head"><span class="section-index">01 / SOBRE MÍ</span><div class="section-heading"><h2 id="about-title">El contexto importa tanto como el código.</h2></div></div>
+        <div class="prose-columns">
+          <div><p>Mi trayectoria incluye soporte de TI, gestión de operaciones y análisis de datos. Actualmente desarrollo aplicaciones e integraciones, aprovechando esa experiencia para entender los problemas reales.</p><p>Soy tecnólogo en Análisis y Desarrollo de Sistemas. Trabajo en productos propios y soluciones empresariales, desde el modelado de datos hasta la implementación y el mantenimiento.</p></div>
+          <dl class="info-list"><div class="info-row"><dt>Formación</dt><dd>Análisis y Desarrollo de Sistemas · Estácio (2023)</dd></div><div class="info-row"><dt>Ubicación</dt><dd>Sergipe, Brasil · Trabajo remoto</dd></div><div class="info-row"><dt>Enfoque</dt><dd>Backend Python, APIs, SQL e integración de sistemas</dd></div></dl>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt" id="competencias" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head"><span class="section-index">02 / HABILIDADES</span><div class="section-heading"><h2 id="skills-title">Herramientas elegidas según el problema.</h2><p>Mi trabajo se concentra en backend y datos. También participo en frontend e infraestructura para comprender la aplicación de principio a fin.</p></div></div>
+        <div class="skills"><article class="skill"><span class="skill-number">01</span><h3>Backend y APIs</h3><p>Python, FastAPI, SQLAlchemy, Alembic, Pytest, autenticación y APIs REST.</p></article><article class="skill"><span class="skill-number">02</span><h3>Datos e integración</h3><p>PostgreSQL, SQLite, SQL relacional, consultas, migraciones y validación de datos.</p></article><article class="skill"><span class="skill-number">03</span><h3>Entrega e interfaz</h3><p>Git, GitHub, Docker, Linux, React, Next.js y TypeScript.</p></article></div>
+      </div>
+    </section>
+    <section class="section" id="projetos" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head"><span class="section-index">03 / PROYECTOS</span><div class="section-heading"><h2 id="projects-title">Proyectos para usos concretos.</h2><p>Productos comerciales, sistemas internos y repositorios públicos. En los proyectos privados describo el contexto y las tecnologías sin exponer información empresarial.</p></div></div>
+        <div class="projects"><article class="project project-wide"><div class="project-top"><span class="project-tag">PRODUCTO PROPIO · CÓDIGO PRIVADO</span><span class="project-number">01/05</span></div><h3>Sabor que Rende</h3><p>Plataforma SaaS para negocios de repostería. Desarrollo el backend con FastAPI y PostgreSQL, incluida autenticación, separación por cuenta, recetas, pedidos, finanzas, migraciones y pruebas.</p><div class="project-bottom"><span class="stack">Python · FastAPI · SQLAlchemy · PostgreSQL · Pytest</span></div></article><article class="project"><div class="project-top"><span class="project-tag">APLICACIÓN INTERNA · CÓDIGO PRIVADO</span><span class="project-number">02/05</span></div><h3>Gestión de flotas e indicadores</h3><p>Aplicación que consolida datos de vehículos, movimientos y costos. Incluye importación, validación, conciliación de fuentes e indicadores operativos.</p><div class="project-bottom"><span class="stack">Python · SQLite · APIs · JavaScript</span></div></article><article class="project"><div class="project-top"><span class="project-tag">PLATAFORMA EMPRESARIAL · CÓDIGO PRIVADO</span><span class="project-number">03/05</span></div><h3>Strategic Enterprise</h3><p>Evolución de una plataforma de gestión estratégica con módulos integrados, control de acceso, pruebas y procesos de despliegue. El backend de este proyecto utiliza PHP/Laravel, no Python.</p><div class="project-bottom"><span class="stack">PHP · Laravel · MySQL · Redis · Docker</span></div></article><article class="project"><div class="project-top"><span class="project-tag">REPOSITORIO PÚBLICO</span><span class="project-number">04/05</span></div><h3>Panel de almacén</h3><p>Herramienta para analizar solicitudes y consumo de materiales de mantenimiento, con tratamiento de datos, gráficos y modelos exploratorios de predicción.</p><div class="project-bottom"><span class="stack">Python · pandas · Streamlit · scikit-learn</span><a class="project-link" href="https://github.com/ksaworks/dashboard-almoxarifado" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a></div></article><article class="project"><div class="project-top"><span class="project-tag">REPOSITORIO PÚBLICO</span><span class="project-number">05/05</span></div><h3>Generador de datos jurídicos</h3><p>Script en Python que crea bases ficticias de clientes y expedientes judiciales para pruebas y análisis sin usar datos personales reales.</p><div class="project-bottom"><span class="stack">Python · pandas · Faker</span><a class="project-link" href="https://github.com/ksaworks/simulacao-dados-juridicos" target="_blank" rel="noopener noreferrer">Ver código <span aria-hidden="true">↗</span></a></div></article></div>
+        <p class="note">El código de los sistemas comerciales e internos es privado. Los repositorios públicos muestran principalmente trabajos con Python para datos y automatización.</p>
+      </div>
+    </section>
+    <section class="section section-alt" id="trajetoria" aria-labelledby="career-title">
+      <div class="container">
+        <div class="section-head"><span class="section-index">04 / EXPERIENCIA</span><div class="section-heading"><h2 id="career-title">Experiencia en distintas áreas.</h2><p>Antes de dedicarme al desarrollo, trabajé directamente con procesos empresariales que hoy orientan mis decisiones técnicas.</p></div></div>
+        <div class="career"><article class="career-row"><span class="career-period">2026 — ACTUALIDAD</span><div><h3>Iguá Sergipe / Fibra RH</h3><div class="role">Analista Administrativo Jr · Gestión de Contratos</div><p>Gestión de contratos y desarrollo de herramientas de apoyo a indicadores y rutinas operativas.</p></div></article><article class="career-row"><span class="career-period">2025 — 2026</span><div><h3>Fiação Itabaiana</h3><div class="role">Analista de Datos Jr · Mejora Continua</div><p>Consultas SQL, indicadores operativos, integración con datos ERP y desarrollo de soluciones internas.</p></div></article><article class="career-row"><span class="career-period">2018 — 2025</span><div><h3>Assaí Atacadista</h3><div class="role">TI, recepción de mercancías y administración</div><p>Experiencia en soporte técnico, controles operativos y gestión de procesos. Allí empecé a relacionar la tecnología con las necesidades del negocio.</p></div></article></div>
+      </div>
+    </section>
+    <section class="contact" id="contato" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <div><span class="section-index">05 / CONTACTO</span><h2 id="contact-title">¿Tienes un problema de software por resolver?</h2><p>Me interesa conversar sobre desarrollo backend, integraciones y proyectos en los que la tecnología tiene que funcionar todos los días.</p></div>
+        <div class="contact-links">
+          <a class="btn btn-primary" href="mailto:kelvinstaandrade@gmail.com">Enviar correo <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/kelvinandradeworks/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>Kelvin Andrade · Sergipe, Brasil</span><span>Portafolio en HTML, CSS y JavaScript · 2026</span></div></footer>
 </body>
-
 </html>
