@@ -5,7 +5,7 @@
   <!-- Página Principal (Português) -->
   <url>
     <loc>https://ksaworks.github.io/portfolio_projetos/index.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/index.html"/>
@@ -16,7 +16,7 @@
   <!-- Página em Inglês -->
   <url>
     <loc>https://ksaworks.github.io/portfolio_projetos/index-en.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/index.html"/>
@@ -27,7 +27,7 @@
   <!-- Página em Espanhol -->
   <url>
     <loc>https://ksaworks.github.io/portfolio_projetos/index-es.html</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://ksaworks.github.io/portfolio_projetos/index.html"/>
@@ -101,5 +101,9 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://ksaworks.github.io/portfolio_projetos/blog/posts/dashboard-almoxarifado-case-study-es.html"/>
   </url>
 
+  <url><loc>https://ksaworks.github.io/portfolio_projetos/cases/granja-que-rende.html</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ksaworks.github.io/portfolio_projetos/cases/sabor-que-rende.html</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ksaworks.github.io/portfolio_projetos/cases/strategic-enterprise.html</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ksaworks.github.io/portfolio_projetos/cases/integracao-frotas.html</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
 
