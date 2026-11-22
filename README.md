@@ -1,40 +1,45 @@
-# Portfólio — Kelvin Andrade
+# Kelvin Andrade — Engenharia de Software e Backend
 
-Portfólio pessoal com foco em desenvolvimento backend em Python, APIs e integração de sistemas.
+Portfólio profissional de desenvolvimento backend, engenharia de sistemas e projetos empresariais.
 
 **Site:** https://ksaworks.github.io/portfolio_projetos/
 
-O conteúdo apresenta minha formação em Análise e Desenvolvimento de Sistemas, experiência profissional e projetos próprios, comerciais e públicos. Sistemas internos e produtos comerciais são descritos sem publicar código ou informações confidenciais.
+## Posicionamento
 
-## Tecnologias do site
+Experiência prática com **Python, FastAPI, PostgreSQL, APIs REST, SQL, Docker** e projetos corporativos. **Java está em formação**: a página do Granja que Rende representa engenharia de requisitos e modelagem, não código Java já implementado.
 
-- HTML sem framework
-- CSS responsivo
-- JavaScript para navegação em telas menores
-- GitHub Pages para publicação
+## Projetos e estudos de caso
 
-As páginas estão disponíveis em [português](index.html), [inglês](index-en.html) e [espanhol](index-es.html), utilizando a mesma folha de estilos e o mesmo script de navegação.
+| Projeto | Foco | Case |
+| --- | --- | --- |
+| Granja que Rende | Requisitos, domínio, decisões de MVP e rastreabilidade | [Case](cases/granja-que-rende.html) |
+| Sabor que Rende | SaaS, backend Python, persistência e regras comerciais | [Case](cases/sabor-que-rende.html) |
+| Strategic Enterprise | Sistema empresarial, Laravel, permissões e integração | [Case](cases/strategic-enterprise.html) |
+| Integração de frotas | Consolidação de fontes e aplicação operacional | [Case](cases/integracao-frotas.html) |
 
-## Estrutura principal
+O código comercial e dados corporativos permanecem privados. Os cases descrevem competências e decisões sem expor sistemas internos, credenciais ou informações de clientes.
 
-- `index.html` — versão em português
-- `index-en.html` — versão em inglês
-- `index-es.html` — versão em espanhol
-- `assets/css/portfolio-2026.css` — estilos atuais
-- `assets/js/portfolio-2026.js` — menu responsivo
+## Site
 
-Arquivos anteriores de blog, estilos e imagens foram mantidos no repositório por compatibilidade e histórico.
+- HTML sem framework, CSS responsivo e JavaScript nativo.
+- Páginas principais em português, inglês e espanhol.
+- Estudos de caso em português (links sinalizados nas outras línguas).
+- Código ilustrativo na abertura em FastAPI: **animação visual**, não execução no navegador.
+- Publicação no GitHub Pages.
+
+## Estrutura
+
+- `index.html`, `index-en.html`, `index-es.html` — páginas principais.
+- `cases/` — estudos de caso de engenharia.
+- `assets/css/portfolio-2026.css` — estilos do site.
+- `assets/js/portfolio-2026.js` — navegação móvel e demonstração de código.
+- `blog/` — conteúdo anterior de dados/BI, mantido temporariamente por compatibilidade; passará por revisão no futuro portfólio de Data Engineering & Analytics.
+
+## Transparência
+
+As descrições não equiparam Java em estudo à experiência profissional em Java. Não são apresentados dados reais privados como evidência pública. Resultados de projetos só devem ser divulgados quando verificáveis e autorizados.
 
 ## Contato
 
 - [GitHub](https://github.com/ksaworks)
 - [LinkedIn](https://www.linkedin.com/in/kelvinandradeworks/)
-
-## Abertura com exemplo Python
-
-A seção inicial inclui um editor ilustrativo com um exemplo pequeno de rota FastAPI.
-A animação mostra o código progressivamente; o botão de repetição reinicia o efeito.
-Ela não executa Python, não acessa APIs e não representa um serviço online.
-
-O exemplo permanece legível sem JavaScript e em dispositivos com preferência por
-movimento reduzido. As três traduções reutilizam o mesmo CSS e JavaScript.
