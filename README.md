@@ -39,6 +39,10 @@ O código comercial e dados corporativos permanecem privados. Os cases descrevem
 
 As descrições não equiparam Java em estudo à experiência profissional em Java. Não são apresentados dados reais privados como evidência pública. Resultados de projetos só devem ser divulgados quando verificáveis e autorizados.
 
+## Portfólio complementar
+
+- [Data Engineering & Analytics](https://ksaworks.github.io/portfolio_dados/) — Python, SQL, ETL/ELT, automações, governança e BI.
+
 ## Contato
 
 - [GitHub](https://github.com/ksaworks)
